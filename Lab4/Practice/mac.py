@@ -35,17 +35,22 @@ class MAC(Elaboratable):
         with m.If(self.in_rst):
             m.d.sync += [
                 self.out_d.eq(0),
-                self.out_d_valid.eq(0),
                 self.out_ovf.eq(0),
+            ]
+            m.d.comb += [
+                self.out_d_valid.eq(0),
             ]
         with m.Elif(self.in_a_valid & self.in_b_valid):
             m.d.sync += [
                 self.out_d.eq(self.current_out),
-                self.out_d_valid.eq(1)
+            ]
+            m.d.comb += [
+                self.out_d_valid.eq(1),
             ]
             if self.signed:
                 m.d.sync += [
-                    self.out_ovf.eq((~(self.mult[acc_bits - 1] ^ self.out_d[acc_bits - 1]) & (self.mult[acc_bits - 1] ^ self.current_out[acc_bits - 1])) | self.out_ovf)
+                    self.out_ovf.eq((~(self.mult[self.acc_bits - 1] ^ self.out_d[self.acc_bits - 1]) &
+                                     (self.mult[self.acc_bits - 1] ^ self.current_out[self.acc_bits - 1])) | self.out_ovf)
                 ]
             else:
                 m.d.sync += [

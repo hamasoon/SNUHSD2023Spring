@@ -25,10 +25,13 @@ class AdderTree(Elaboratable):
         self.out_ovf = Signal(1)
         self.out_valid = Signal(1)
 
+        self.current_d = Signal(Shape(acc_bits, signed=signed))
+        self.current_ovf = Signal(1)
+
         # TODO
-        if self.fan_in > 2:
-            self.tree_l = AdderTree(acc_bits, fan_in//2)
-            self.tree_r = AdderTree(acc_bits, fan_in//2)
+        if fan_in >= 4:
+            self.tree_l = AdderTree(acc_bits, fan_in // 2, signed)
+            self.tree_r = AdderTree(acc_bits, fan_in // 2, signed)
 
     def elaborate(self, platform):
         m = Module()
@@ -36,17 +39,44 @@ class AdderTree(Elaboratable):
         if self.fan_in > 2:
             m.submodules.tree_l = tree_l = self.tree_l
             m.submodules.tree_r = tree_r = self.tree_r
+            for i in range(fan_in // 2):
+                m.d.comb += [
+                    tree_l.in_data[i].eq(self.in_data[i]),
+                    tree_r.in_data[i].eq(self.in_data[i + fan_in // 2]),
+                    tree_l.in_valid[i].eq(self.in_valid[i]),
+                    tree_r.in_valid[i].eq(self.in_valid[i + fan_in // 2]),
+                    tree_l.in_ovf[i].eq(self.in_ovf[i]),
+                    tree_r.in_ovf[i].eq(self.in_ovf[i + fan_in // 2])
+                ]
             m.d.comb += [
-                Cat(self.out_d, self.out_ovf).eq(
-                    tree_l.out_d + tree_r.out_d
-                )
+                Cat(self.out_d, self.current_ovf).eq(tree_l.out_d + tree_r.out_d),
+                self.out_valid.eq(tree_l.out_valid & tree_r.out_valid)
             ]
-        else :
+            if signed:
+                m.d.comb += [
+                    self.out_ovf.eq((~(tree_l.out_d[acc_bits - 1] ^ tree_r.out_d[acc_bits - 1]) & (
+                                tree_l.out_d[acc_bits - 1] ^ self.out_d[
+                            acc_bits - 1])) | tree_l.out_ovf | tree_r.out_ovf)
+                ]
+            else:
+                m.d.comb += [
+                    self.out_ovf.eq(tree_l.out_ovf | tree_r.out_ovf | self.current_ovf)
+                ]
+        else:
             m.d.comb += [
-                Cat(self.out_d, self.out_ovf).eq(
-                    self.in_data[0] + self.in_data[1]
-                )
+                self.out_valid.eq(self.in_valid[0] & self.in_valid[1]),
+                Cat(self.out_d, self.current_ovf).eq(self.in_data[0] + self.in_data[1])
             ]
+            if signed:
+                m.d.comb += [
+                    self.out_ovf.eq((~(self.in_data[0][acc_bits - 1] ^ self.in_data[1][acc_bits - 1]) & (
+                                self.in_data[0][acc_bits - 1] ^ self.out_d[acc_bits - 1])) | self.in_ovf[0] |
+                                    self.in_ovf[1])
+                ]
+            else:
+                m.d.comb += [
+                    self.out_ovf.eq(self.in_ovf[0] | self.in_ovf[1] | self.current_ovf)
+                ]
 
         return m
 
@@ -62,6 +92,7 @@ if __name__ == '__main__':
 
     np.random.seed(42)
 
+
     def test_case(dut, in_data, in_ovf, in_valid):
         for i, d in enumerate(in_data):
             yield dut.in_data[i].eq(int(d))
@@ -76,21 +107,27 @@ if __name__ == '__main__':
         if hw_ovf:
             assert ((hw_sum - sum(in_data)) % (2 ** acc_bits) == 0)
         else:
+            print(hw_sum)
+            print(in_data)
+            print(sum(in_data))
             assert (hw_sum == sum(in_data))
+
 
     def bench():
         for _ in range(512):
             yield from test_case(dut,
                                  in_data=np.random.randint(
-                                     low=-2**(acc_bits-2),
-                                     high=2**(acc_bits-2), size=fan_in),
+                                     low=-2 ** (acc_bits - 2),
+                                     high=2 ** (acc_bits - 2), size=fan_in),
                                  in_ovf=np.random.randint(
                                      low=0, high=1, size=fan_in),
                                  in_valid=np.random.randint(
-                                     low=0,  high=2, size=fan_in)
+                                     low=0, high=2, size=fan_in)
                                  )
 
+
     from pathlib import Path
+
     p = Path(__file__)
 
     sim = Simulator(dut)
@@ -101,6 +138,7 @@ if __name__ == '__main__':
             sim.run()
 
     from amaranth.back import verilog
+
     top = AdderTree(acc_bits=acc_bits, fan_in=fan_in, signed=signed)
     with open(p.with_suffix('.v'), 'w') as f:
         f.write(

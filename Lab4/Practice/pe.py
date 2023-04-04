@@ -12,6 +12,7 @@ class PE(Elaboratable):
         assert acc_bits >= 2 * num_bits
 
         self.in_init = Signal(cnt_bits)
+        self.cnt = Signal(cnt_bits)
         self.in_rst = Signal(1, reset_less=True)
 
         self.in_a = Signal(Shape(num_bits, signed=signed))
@@ -25,20 +26,54 @@ class PE(Elaboratable):
 
         # TODO
 
-
     def elaborate(self, platform):
         m = Module()
 
         m.submodules.mac = mac = ResetInserter(self.mac.in_rst)(self.mac)
 
-        # TODO
-        
+        m.d.comb += [
+            self.mac.in_a.eq(self.in_a),
+            self.mac.in_b.eq(self.in_b),
+            self.out_d.eq(self.mac.out_d),
+            self.out_ovf.eq(self.mac.out_ovf),
+        ]
 
         with m.FSM(reset='INIT'):
             with m.State('INIT'):
-                # TODO
+                m.d.comb += [
+                    self.mac.in_a_valid.eq(0),
+                    self.mac.in_b_valid.eq(0)
+                ]
+                with m.If(self.in_init):
+                    m.next = 'EXEC'
+                    m.d.comb += [
+                        self.mac.in_rst.eq(1),
+                    ]
+                    m.d.sync += [
+                        self.cnt.eq(self.in_init),
+                        self.out_d_valid.eq(0)
+                    ]
+
+                with m.Else():
+                    m.d.comb += [
+                        self.mac.in_rst.eq(0),
+                    ]
+
             with m.State('EXEC'):
-                # TODO
+                m.d.comb += [
+                    self.mac.in_a_valid.eq(1),
+                    self.mac.in_b_valid.eq(1),
+                    self.mac.in_rst.eq(0)
+                ]
+                m.d.sync += [
+                    self.cnt.eq(self.cnt - 1)
+                ]
+                with m.If(self.cnt == 1):
+                    m.d.sync += [
+                        self.out_d_valid.eq(1)
+                    ]
+                    m.next = 'INIT'
+
 
         return m
 
