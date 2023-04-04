@@ -27,20 +27,22 @@ class PEStack(Elaboratable):
         assert is_power_of_two(self.num_stack)
 
         self.adder_tree = AdderTree(
-            acc_bits=self.acc_bits, fan_in=self.num_stack, signed=signed)
+            acc_bits=self.acc_bits, fan_in=self.num_stack, signed=self.signed)
 
         self.pe_arr = [
             PE(num_bits=num_bits, acc_bits=self.acc_bits,
-               cnt_bits=cnt_bits, signed=signed)
+               cnt_bits=cnt_bits, signed=self.signed)
             for _ in range(self.num_stack)]
 
         self.in_rst = Signal(1, reset_less=True)
         self.in_init = Signal(cnt_bits)
-        self.in_a = Signal(width)
-        self.in_b = Signal(width)
+        self.cnt = Signal(cnt_bits)
+
+        self.in_a = Signal(Shape(width, signed=self.signed))
+        self.in_b = Signal(Shape(width, signed=self.signed))
         self.in_act = Signal(1)
 
-        self.out_d = Signal(Shape(self.acc_bits, signed=True))
+        self.out_d = Signal(Shape(self.acc_bits, signed=self.signed))
         self.out_ready = Signal(1)
         self.out_ovf = Signal(1)
 
@@ -49,12 +51,46 @@ class PEStack(Elaboratable):
 
         m.submodules.adder_tree = adder_tree = self.adder_tree
 
-        # TODO
+        m.d.comb += [
+            self.out_d.eq(adder_tree.out_d),
+            self.out_ovf.eq(adder_tree.out_ovf)
+        ]
 
         for i, pe in enumerate(self.pe_arr):
             m.submodules += pe
 
+            m.d.comb += [
+                pe.in_a.eq(self.in_a[self.num_bits * i:self.num_bits * (i + 1)]),
+                pe.in_b.eq(self.in_b[self.num_bits * i:self.num_bits * (i + 1)]),
+            ]
+
+            m.d.comb += [
+                self.adder_tree.in_data[i].eq(pe.out_d)
+            ]
+
+            with m.FSM(reset='INIT'):
+                with m.State('INIT'):
+                    with m.If(self.in_init):
+                        m.next = 'EXEC'
+                        m.d.comb += [
+                            pe.in_init.eq(self.in_init)
+                        ]
+                        m.d.sync += [
+                            self.cnt.eq(self.in_init),
+                            self.out_ready.eq(0)
+                        ]
+                with m.State('EXEC'):
+                    m.d.sync += [
+                        self.cnt.eq(self.cnt - 1)
+                    ]
+                    with m.If(self.cnt == 1):
+                        m.d.sync += [
+                            self.out_ready.eq(1)
+                        ]
+                        m.next = 'INIT'
+
             # TODO
+
         return m
 
 

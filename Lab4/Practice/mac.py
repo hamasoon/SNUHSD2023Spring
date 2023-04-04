@@ -9,20 +9,20 @@ class MAC(Elaboratable):
 
         assert acc_bits >= num_bits * 2
 
-        self.in_a = Signal(Shape(num_bits, signed=signed))
+        self.in_a = Signal(Shape(num_bits, signed=self.signed))
         self.in_a_valid = Signal(1)
-        self.in_b = Signal(Shape(num_bits, signed=signed))
+        self.in_b = Signal(Shape(num_bits, signed=self.signed))
         self.in_b_valid = Signal(1)
 
         self.in_rst = Signal(1, reset_less=True)
 
-        self.out_d = Signal(Shape(acc_bits, signed=signed))
+        self.out_d = Signal(Shape(acc_bits, signed=self.signed))
         self.out_d_valid = Signal(1)
         self.out_ovf = Signal(1)
 
-        self.mult = Signal(Shape(acc_bits, signed=signed))
-        self.current_out = Signal(Shape(acc_bits, signed=signed))
-        self.current_out_ovf = Signal(Shape(1, signed=signed))
+        self.mult = Signal(Shape(acc_bits, signed=self.signed))
+        self.current_out = Signal(Shape(acc_bits, signed=self.signed))
+        self.current_out_ovf = Signal(Shape(1, signed=self.signed))
     def elaborate(self, platform):
         m = Module()
 
