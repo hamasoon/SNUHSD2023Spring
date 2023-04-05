@@ -67,6 +67,9 @@ class PEStack(Elaboratable):
 
             with m.FSM(reset='INIT'):
                 with m.State('INIT'):
+                    m.d.comb += [
+                        self.adder_tree.in_valid[i].eq(0)
+                    ]
                     with m.If(self.in_init):
                         m.next = 'EXEC'
                         m.d.comb += [
@@ -77,6 +80,9 @@ class PEStack(Elaboratable):
                             self.out_ready.eq(0)
                         ]
                 with m.State('EXEC'):
+                    m.d.comb += [
+                        self.adder_tree.in_valid[i].eq(1)
+                    ]
                     m.d.sync += [
                         self.cnt.eq(self.cnt - 1)
                     ]
