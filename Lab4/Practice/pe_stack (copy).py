@@ -62,6 +62,9 @@ class PEStack(Elaboratable):
             m.d.comb += [
                 pe.in_a.eq(self.in_a[self.num_bits * i:self.num_bits * (i + 1)]),
                 pe.in_b.eq(self.in_b[self.num_bits * i:self.num_bits * (i + 1)]),
+            ]
+
+            m.d.comb += [
                 self.adder_tree.in_data[i].eq(pe.out_d)
             ]
 
@@ -85,7 +88,9 @@ class PEStack(Elaboratable):
                             self.out_ready.eq(1)
                         ]
                         m.next = 'INIT'
-                        
+
+            # TODO
+
         return m
 
 

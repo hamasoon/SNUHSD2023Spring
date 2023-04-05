@@ -4,75 +4,75 @@
 (* generator = "Amaranth" *)
 module \U$$0 (in_b, out_d, in_init, rst, clk, in_a);
   reg \$auto$verilog_backend.cc:2083:dump_module$27  = 0;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *)
   wire [5:0] \$10 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$12 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
   wire \$14 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
   wire \$3 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$5 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *)
   wire [5:0] \$9 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:15" *)
   reg [4:0] cnt = 5'h00;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:15" *)
   reg [4:0] \cnt$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
   reg fsm_state = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
   reg \fsm_state$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:18" *)
   input [7:0] in_a;
   wire [7:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:19" *)
   input [7:0] in_b;
   wire [7:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:14" *)
   input [4:0] in_init;
   wire [4:0] in_init;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:12" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:12" *)
   wire [7:0] mac_in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:13" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:13" *)
   reg mac_in_a_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:14" *)
   wire [7:0] mac_in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:15" *)
   reg mac_in_b_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:17" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:17" *)
   reg mac_in_rst;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   wire [31:0] mac_out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   wire mac_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:21" *)
   output [31:0] out_d;
   wire [31:0] out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:22" *)
   reg out_d_valid = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:22" *)
   reg \out_d_valid$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:23" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:23" *)
   wire out_ovf;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$10  = cnt - (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *) 1'h1;
-  assign \$12  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$14  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *) 1'h1;
-  assign \$1  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$3  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *) 1'h1;
-  assign \$5  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$7  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
+  assign \$10  = cnt - (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *) 1'h1;
+  assign \$12  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$14  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *) 1'h1;
+  assign \$1  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$3  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *) 1'h1;
+  assign \$5  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$7  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
   always @(posedge clk)
     out_d_valid <= \out_d_valid$next ;
   always @(posedge clk)
@@ -93,14 +93,14 @@ module \U$$0 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$27 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           mac_in_a_valid = 1'h0;
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_a_valid = 1'h1;
     endcase
@@ -108,14 +108,14 @@ module \U$$0 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$27 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           mac_in_b_valid = 1'h0;
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_b_valid = 1'h1;
     endcase
@@ -124,28 +124,28 @@ module \U$$0 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$27 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$1 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \fsm_state$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
           casez (\$3 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" */
             1'h1:
                 \fsm_state$next  = 1'h0;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \fsm_state$next  = 1'h0;
@@ -154,23 +154,23 @@ module \U$$0 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$27 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           (* full_case = 32'd1 *)
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$5 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 mac_in_rst = 1'h1;
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:57" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:57" */
             default:
                 mac_in_rst = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_rst = 1'h0;
     endcase
@@ -179,23 +179,23 @@ module \U$$0 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$27 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$7 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \cnt$next  = in_init;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           \cnt$next  = \$10 [4:0];
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \cnt$next  = 5'h00;
@@ -205,28 +205,28 @@ module \U$$0 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$27 ) begin end
     \out_d_valid$next  = out_d_valid;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$12 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \out_d_valid$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
           casez (\$14 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" */
             1'h1:
                 \out_d_valid$next  = 1'h1;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_d_valid$next  = 1'h0;
@@ -243,75 +243,75 @@ endmodule
 (* generator = "Amaranth" *)
 module \U$$1 (in_b, out_d, in_init, rst, clk, in_a);
   reg \$auto$verilog_backend.cc:2083:dump_module$28  = 0;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *)
   wire [5:0] \$10 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$12 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
   wire \$14 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
   wire \$3 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$5 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *)
   wire [5:0] \$9 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:15" *)
   reg [4:0] cnt = 5'h00;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:15" *)
   reg [4:0] \cnt$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
   reg fsm_state = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
   reg \fsm_state$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:18" *)
   input [7:0] in_a;
   wire [7:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:19" *)
   input [7:0] in_b;
   wire [7:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:14" *)
   input [4:0] in_init;
   wire [4:0] in_init;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:12" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:12" *)
   wire [7:0] mac_in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:13" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:13" *)
   reg mac_in_a_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:14" *)
   wire [7:0] mac_in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:15" *)
   reg mac_in_b_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:17" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:17" *)
   reg mac_in_rst;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   wire [31:0] mac_out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   wire mac_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:21" *)
   output [31:0] out_d;
   wire [31:0] out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:22" *)
   reg out_d_valid = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:22" *)
   reg \out_d_valid$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:23" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:23" *)
   wire out_ovf;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$10  = cnt - (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *) 1'h1;
-  assign \$12  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$14  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *) 1'h1;
-  assign \$1  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$3  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *) 1'h1;
-  assign \$5  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$7  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
+  assign \$10  = cnt - (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *) 1'h1;
+  assign \$12  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$14  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *) 1'h1;
+  assign \$1  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$3  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *) 1'h1;
+  assign \$5  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$7  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
   always @(posedge clk)
     out_d_valid <= \out_d_valid$next ;
   always @(posedge clk)
@@ -332,14 +332,14 @@ module \U$$1 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$28 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           mac_in_a_valid = 1'h0;
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_a_valid = 1'h1;
     endcase
@@ -347,14 +347,14 @@ module \U$$1 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$28 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           mac_in_b_valid = 1'h0;
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_b_valid = 1'h1;
     endcase
@@ -363,28 +363,28 @@ module \U$$1 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$28 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$1 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \fsm_state$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
           casez (\$3 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" */
             1'h1:
                 \fsm_state$next  = 1'h0;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \fsm_state$next  = 1'h0;
@@ -393,23 +393,23 @@ module \U$$1 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$28 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           (* full_case = 32'd1 *)
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$5 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 mac_in_rst = 1'h1;
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:57" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:57" */
             default:
                 mac_in_rst = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_rst = 1'h0;
     endcase
@@ -418,23 +418,23 @@ module \U$$1 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$28 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$7 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \cnt$next  = in_init;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           \cnt$next  = \$10 [4:0];
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \cnt$next  = 5'h00;
@@ -444,28 +444,28 @@ module \U$$1 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$28 ) begin end
     \out_d_valid$next  = out_d_valid;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$12 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \out_d_valid$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
           casez (\$14 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" */
             1'h1:
                 \out_d_valid$next  = 1'h1;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_d_valid$next  = 1'h0;
@@ -482,75 +482,75 @@ endmodule
 (* generator = "Amaranth" *)
 module \U$$2 (in_b, out_d, in_init, rst, clk, in_a);
   reg \$auto$verilog_backend.cc:2083:dump_module$29  = 0;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *)
   wire [5:0] \$10 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$12 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
   wire \$14 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
   wire \$3 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$5 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *)
   wire [5:0] \$9 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:15" *)
   reg [4:0] cnt = 5'h00;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:15" *)
   reg [4:0] \cnt$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
   reg fsm_state = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
   reg \fsm_state$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:18" *)
   input [7:0] in_a;
   wire [7:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:19" *)
   input [7:0] in_b;
   wire [7:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:14" *)
   input [4:0] in_init;
   wire [4:0] in_init;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:12" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:12" *)
   wire [7:0] mac_in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:13" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:13" *)
   reg mac_in_a_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:14" *)
   wire [7:0] mac_in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:15" *)
   reg mac_in_b_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:17" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:17" *)
   reg mac_in_rst;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   wire [31:0] mac_out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   wire mac_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:21" *)
   output [31:0] out_d;
   wire [31:0] out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:22" *)
   reg out_d_valid = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:22" *)
   reg \out_d_valid$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:23" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:23" *)
   wire out_ovf;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$10  = cnt - (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *) 1'h1;
-  assign \$12  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$14  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *) 1'h1;
-  assign \$1  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$3  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *) 1'h1;
-  assign \$5  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$7  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
+  assign \$10  = cnt - (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *) 1'h1;
+  assign \$12  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$14  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *) 1'h1;
+  assign \$1  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$3  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *) 1'h1;
+  assign \$5  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$7  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
   always @(posedge clk)
     out_d_valid <= \out_d_valid$next ;
   always @(posedge clk)
@@ -571,14 +571,14 @@ module \U$$2 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$29 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           mac_in_a_valid = 1'h0;
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_a_valid = 1'h1;
     endcase
@@ -586,14 +586,14 @@ module \U$$2 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$29 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           mac_in_b_valid = 1'h0;
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_b_valid = 1'h1;
     endcase
@@ -602,28 +602,28 @@ module \U$$2 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$29 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$1 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \fsm_state$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
           casez (\$3 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" */
             1'h1:
                 \fsm_state$next  = 1'h0;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \fsm_state$next  = 1'h0;
@@ -632,23 +632,23 @@ module \U$$2 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$29 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           (* full_case = 32'd1 *)
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$5 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 mac_in_rst = 1'h1;
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:57" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:57" */
             default:
                 mac_in_rst = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_rst = 1'h0;
     endcase
@@ -657,23 +657,23 @@ module \U$$2 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$29 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$7 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \cnt$next  = in_init;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           \cnt$next  = \$10 [4:0];
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \cnt$next  = 5'h00;
@@ -683,28 +683,28 @@ module \U$$2 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$29 ) begin end
     \out_d_valid$next  = out_d_valid;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$12 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \out_d_valid$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
           casez (\$14 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" */
             1'h1:
                 \out_d_valid$next  = 1'h1;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_d_valid$next  = 1'h0;
@@ -721,75 +721,75 @@ endmodule
 (* generator = "Amaranth" *)
 module \U$$3 (in_b, out_d, in_init, rst, clk, in_a);
   reg \$auto$verilog_backend.cc:2083:dump_module$30  = 0;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *)
   wire [5:0] \$10 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$12 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
   wire \$14 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
   wire \$3 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$5 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *)
   wire [5:0] \$9 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:15" *)
   reg [4:0] cnt = 5'h00;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:15" *)
   reg [4:0] \cnt$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
   reg fsm_state = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
   reg \fsm_state$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:18" *)
   input [7:0] in_a;
   wire [7:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:19" *)
   input [7:0] in_b;
   wire [7:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:14" *)
   input [4:0] in_init;
   wire [4:0] in_init;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:12" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:12" *)
   wire [7:0] mac_in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:13" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:13" *)
   reg mac_in_a_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:14" *)
   wire [7:0] mac_in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:15" *)
   reg mac_in_b_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:17" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:17" *)
   reg mac_in_rst;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   wire [31:0] mac_out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   wire mac_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:21" *)
   output [31:0] out_d;
   wire [31:0] out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:22" *)
   reg out_d_valid = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:22" *)
   reg \out_d_valid$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:23" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:23" *)
   wire out_ovf;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$10  = cnt - (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:69" *) 1'h1;
-  assign \$12  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$14  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *) 1'h1;
-  assign \$1  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$3  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *) 1'h1;
-  assign \$5  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$7  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
+  assign \$10  = cnt - (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:69" *) 1'h1;
+  assign \$12  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$14  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *) 1'h1;
+  assign \$1  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$3  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *) 1'h1;
+  assign \$5  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$7  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
   always @(posedge clk)
     out_d_valid <= \out_d_valid$next ;
   always @(posedge clk)
@@ -810,14 +810,14 @@ module \U$$3 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$30 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           mac_in_a_valid = 1'h0;
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_a_valid = 1'h1;
     endcase
@@ -825,14 +825,14 @@ module \U$$3 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$30 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           mac_in_b_valid = 1'h0;
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_b_valid = 1'h1;
     endcase
@@ -841,28 +841,28 @@ module \U$$3 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$30 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$1 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \fsm_state$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
           casez (\$3 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" */
             1'h1:
                 \fsm_state$next  = 1'h0;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \fsm_state$next  = 1'h0;
@@ -871,23 +871,23 @@ module \U$$3 (in_b, out_d, in_init, rst, clk, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$30 ) begin end
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
           (* full_case = 32'd1 *)
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$5 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 mac_in_rst = 1'h1;
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:57" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:57" */
             default:
                 mac_in_rst = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           mac_in_rst = 1'h0;
     endcase
@@ -896,23 +896,23 @@ module \U$$3 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$30 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$7 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \cnt$next  = in_init;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
           \cnt$next  = \$10 [4:0];
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \cnt$next  = 5'h00;
@@ -922,28 +922,28 @@ module \U$$3 (in_b, out_d, in_init, rst, clk, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$30 ) begin end
     \out_d_valid$next  = out_d_valid;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:41" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:41" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:42" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:42" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" *)
           casez (\$12 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:47" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:47" */
             1'h1:
                 \out_d_valid$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:62" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:62" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" *)
           casez (\$14 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:71" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:71" */
             1'h1:
                 \out_d_valid$next  = 1'h1;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_d_valid$next  = 1'h0;
@@ -959,104 +959,104 @@ endmodule
 (* \amaranth.hierarchy  = "top.adder_tree" *)
 (* generator = "Amaranth" *)
 module adder_tree(out_ovf, in_data_4_0, in_data_4_1, in_data_4_2, in_data_4_3, out_d);
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:52" *)
   wire [32:0] \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *)
   wire \$11 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *)
   wire \$13 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *)
   wire \$15 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:53" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:53" *)
   wire \$3 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *)
   wire \$5 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *)
   wire \$6 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:58" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:58" *)
   wire \$9 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:29" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:29" *)
   wire current_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   input [31:0] in_data_4_0;
   wire [31:0] in_data_4_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   input [31:0] in_data_4_1;
   wire [31:0] in_data_4_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   input [31:0] in_data_4_2;
   wire [31:0] in_data_4_2;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   input [31:0] in_data_4_3;
   wire [31:0] in_data_4_3;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   wire in_ovf_4_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   wire in_ovf_4_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   wire in_ovf_4_2;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   wire in_ovf_4_3;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   wire in_valid_4_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   wire in_valid_4_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   wire in_valid_4_2;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   wire in_valid_4_3;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:24" *)
   output [31:0] out_d;
   wire [31:0] out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:25" *)
   output out_ovf;
   wire out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:26" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:26" *)
   wire out_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   wire [31:0] tree_l_in_data_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   wire [31:0] tree_l_in_data_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   wire tree_l_in_ovf_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   wire tree_l_in_ovf_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   wire tree_l_in_valid_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   wire tree_l_in_valid_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:24" *)
   wire [31:0] tree_l_out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:25" *)
   wire tree_l_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:26" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:26" *)
   wire tree_l_out_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   wire [31:0] tree_r_in_data_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   wire [31:0] tree_r_in_data_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   wire tree_r_in_ovf_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   wire tree_r_in_ovf_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   wire tree_r_in_valid_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   wire tree_r_in_valid_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:24" *)
   wire [31:0] tree_r_out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:25" *)
   wire tree_r_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:26" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:26" *)
   wire tree_r_out_valid;
-  assign \$9  = tree_l_out_d[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:58" *) out_d[31];
-  assign \$11  = \$5  & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *) \$9 ;
-  assign \$13  = \$11  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *) tree_l_out_ovf;
-  assign \$15  = \$13  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *) tree_r_out_ovf;
-  assign \$1  = $signed(tree_l_out_d) + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:52" *) $signed(tree_r_out_d);
-  assign \$3  = tree_l_out_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:53" *) tree_r_out_valid;
-  assign \$6  = tree_l_out_d[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *) tree_r_out_d[31];
-  assign \$5  = ~ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:57" *) \$6 ;
+  assign \$9  = tree_l_out_d[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:58" *) out_d[31];
+  assign \$11  = \$5  & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *) \$9 ;
+  assign \$13  = \$11  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *) tree_l_out_ovf;
+  assign \$15  = \$13  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *) tree_r_out_ovf;
+  assign \$1  = $signed(tree_l_out_d) + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:52" *) $signed(tree_r_out_d);
+  assign \$3  = tree_l_out_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:53" *) tree_r_out_valid;
+  assign \$6  = tree_l_out_d[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *) tree_r_out_d[31];
+  assign \$5  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:57" *) \$6 ;
   tree_l tree_l (
     .in_data_2_0(tree_l_in_data_2_0),
     .in_data_2_1(tree_l_in_data_2_1),
@@ -1108,81 +1108,81 @@ endmodule
 (* generator = "Amaranth" *)
 module mac(clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
   reg \$auto$verilog_backend.cc:2083:dump_module$31  = 0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *)
   wire [31:0] \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$11 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$13 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$14 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:53" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:53" *)
   wire \$17 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$19 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *)
   wire [15:0] \$2 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$21 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$23 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *)
   wire [15:0] \$5 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *)
   wire [32:0] \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$9 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:24" *)
   wire [31:0] current_out;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:25" *)
   wire current_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:12" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:12" *)
   input [7:0] in_a;
   wire [7:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:13" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:13" *)
   input in_a_valid;
   wire in_a_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:14" *)
   input [7:0] in_b;
   wire [7:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:15" *)
   input in_b_valid;
   wire in_b_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:17" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:17" *)
   input in_rst;
   wire in_rst;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:23" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:23" *)
   wire [31:0] mult;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   output [31:0] out_d;
   reg [31:0] out_d = 32'd0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   reg [31:0] \out_d$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:20" *)
   reg out_d_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   output out_ovf;
   reg out_ovf = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   reg \out_ovf$next ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$9  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$11  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$14  = mult[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) out_d[31];
-  assign \$13  = ~ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) \$14 ;
-  assign \$17  = mult[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:53" *) current_out[31];
-  assign \$19  = \$13  & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) \$17 ;
-  assign \$21  = \$19  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) out_ovf;
-  assign \$23  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$2  = $signed(in_a) * (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *) $signed(in_b);
-  assign \$1  = + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *) $signed(\$2 );
-  assign \$5  = $signed(in_a) * (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *) $signed(in_b);
-  assign \$7  = $signed(\$5 ) + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *) $signed(out_d);
+  assign \$9  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$11  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$14  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) out_d[31];
+  assign \$13  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) \$14 ;
+  assign \$17  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:53" *) current_out[31];
+  assign \$19  = \$13  & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) \$17 ;
+  assign \$21  = \$19  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) out_ovf;
+  assign \$23  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$2  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *) $signed(in_b);
+  assign \$1  = + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *) $signed(\$2 );
+  assign \$5  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *) $signed(in_b);
+  assign \$7  = $signed(\$5 ) + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *) $signed(out_d);
   always @(posedge clk)
     out_ovf <= \out_ovf$next ;
   always @(posedge clk)
@@ -1190,21 +1190,21 @@ module mac(clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst)
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$31 ) begin end
     \out_d$next  = out_d;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$9 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           \out_d$next  = 32'd0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           \out_d$next  = current_out;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:334" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
     casez (in_rst)
       1'h1:
           \out_d$next  = 32'd0;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_d$next  = 32'd0;
@@ -1213,21 +1213,21 @@ module mac(clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst)
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$31 ) begin end
     \out_ovf$next  = out_ovf;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$11 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           \out_ovf$next  = 1'h0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           \out_ovf$next  = \$21 ;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:334" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
     casez (in_rst)
       1'h1:
           \out_ovf$next  = 1'h0;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_ovf$next  = 1'h0;
@@ -1236,12 +1236,12 @@ module mac(clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst)
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$31 ) begin end
     out_d_valid = 1'h0;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$23 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           out_d_valid = 1'h0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           out_d_valid = 1'h1;
     endcase
@@ -1254,81 +1254,81 @@ endmodule
 (* generator = "Amaranth" *)
 module \mac$1 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
   reg \$auto$verilog_backend.cc:2083:dump_module$32  = 0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *)
   wire [31:0] \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$11 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$13 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$14 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:53" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:53" *)
   wire \$17 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$19 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *)
   wire [15:0] \$2 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$21 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$23 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *)
   wire [15:0] \$5 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *)
   wire [32:0] \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$9 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:24" *)
   wire [31:0] current_out;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:25" *)
   wire current_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:12" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:12" *)
   input [7:0] in_a;
   wire [7:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:13" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:13" *)
   input in_a_valid;
   wire in_a_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:14" *)
   input [7:0] in_b;
   wire [7:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:15" *)
   input in_b_valid;
   wire in_b_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:17" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:17" *)
   input in_rst;
   wire in_rst;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:23" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:23" *)
   wire [31:0] mult;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   output [31:0] out_d;
   reg [31:0] out_d = 32'd0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   reg [31:0] \out_d$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:20" *)
   reg out_d_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   output out_ovf;
   reg out_ovf = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   reg \out_ovf$next ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$9  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$11  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$14  = mult[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) out_d[31];
-  assign \$13  = ~ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) \$14 ;
-  assign \$17  = mult[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:53" *) current_out[31];
-  assign \$19  = \$13  & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) \$17 ;
-  assign \$21  = \$19  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) out_ovf;
-  assign \$23  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$2  = $signed(in_a) * (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *) $signed(in_b);
-  assign \$1  = + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *) $signed(\$2 );
-  assign \$5  = $signed(in_a) * (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *) $signed(in_b);
-  assign \$7  = $signed(\$5 ) + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *) $signed(out_d);
+  assign \$9  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$11  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$14  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) out_d[31];
+  assign \$13  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) \$14 ;
+  assign \$17  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:53" *) current_out[31];
+  assign \$19  = \$13  & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) \$17 ;
+  assign \$21  = \$19  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) out_ovf;
+  assign \$23  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$2  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *) $signed(in_b);
+  assign \$1  = + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *) $signed(\$2 );
+  assign \$5  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *) $signed(in_b);
+  assign \$7  = $signed(\$5 ) + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *) $signed(out_d);
   always @(posedge clk)
     out_ovf <= \out_ovf$next ;
   always @(posedge clk)
@@ -1336,21 +1336,21 @@ module \mac$1 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$32 ) begin end
     \out_d$next  = out_d;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$9 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           \out_d$next  = 32'd0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           \out_d$next  = current_out;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:334" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
     casez (in_rst)
       1'h1:
           \out_d$next  = 32'd0;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_d$next  = 32'd0;
@@ -1359,21 +1359,21 @@ module \mac$1 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$32 ) begin end
     \out_ovf$next  = out_ovf;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$11 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           \out_ovf$next  = 1'h0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           \out_ovf$next  = \$21 ;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:334" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
     casez (in_rst)
       1'h1:
           \out_ovf$next  = 1'h0;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_ovf$next  = 1'h0;
@@ -1382,12 +1382,12 @@ module \mac$1 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$32 ) begin end
     out_d_valid = 1'h0;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$23 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           out_d_valid = 1'h0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           out_d_valid = 1'h1;
     endcase
@@ -1400,81 +1400,81 @@ endmodule
 (* generator = "Amaranth" *)
 module \mac$2 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
   reg \$auto$verilog_backend.cc:2083:dump_module$33  = 0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *)
   wire [31:0] \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$11 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$13 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$14 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:53" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:53" *)
   wire \$17 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$19 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *)
   wire [15:0] \$2 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$21 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$23 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *)
   wire [15:0] \$5 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *)
   wire [32:0] \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$9 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:24" *)
   wire [31:0] current_out;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:25" *)
   wire current_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:12" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:12" *)
   input [7:0] in_a;
   wire [7:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:13" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:13" *)
   input in_a_valid;
   wire in_a_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:14" *)
   input [7:0] in_b;
   wire [7:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:15" *)
   input in_b_valid;
   wire in_b_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:17" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:17" *)
   input in_rst;
   wire in_rst;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:23" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:23" *)
   wire [31:0] mult;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   output [31:0] out_d;
   reg [31:0] out_d = 32'd0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   reg [31:0] \out_d$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:20" *)
   reg out_d_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   output out_ovf;
   reg out_ovf = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   reg \out_ovf$next ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$9  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$11  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$14  = mult[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) out_d[31];
-  assign \$13  = ~ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) \$14 ;
-  assign \$17  = mult[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:53" *) current_out[31];
-  assign \$19  = \$13  & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) \$17 ;
-  assign \$21  = \$19  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) out_ovf;
-  assign \$23  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$2  = $signed(in_a) * (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *) $signed(in_b);
-  assign \$1  = + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *) $signed(\$2 );
-  assign \$5  = $signed(in_a) * (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *) $signed(in_b);
-  assign \$7  = $signed(\$5 ) + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *) $signed(out_d);
+  assign \$9  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$11  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$14  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) out_d[31];
+  assign \$13  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) \$14 ;
+  assign \$17  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:53" *) current_out[31];
+  assign \$19  = \$13  & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) \$17 ;
+  assign \$21  = \$19  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) out_ovf;
+  assign \$23  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$2  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *) $signed(in_b);
+  assign \$1  = + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *) $signed(\$2 );
+  assign \$5  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *) $signed(in_b);
+  assign \$7  = $signed(\$5 ) + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *) $signed(out_d);
   always @(posedge clk)
     out_ovf <= \out_ovf$next ;
   always @(posedge clk)
@@ -1482,21 +1482,21 @@ module \mac$2 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$33 ) begin end
     \out_d$next  = out_d;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$9 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           \out_d$next  = 32'd0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           \out_d$next  = current_out;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:334" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
     casez (in_rst)
       1'h1:
           \out_d$next  = 32'd0;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_d$next  = 32'd0;
@@ -1505,21 +1505,21 @@ module \mac$2 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$33 ) begin end
     \out_ovf$next  = out_ovf;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$11 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           \out_ovf$next  = 1'h0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           \out_ovf$next  = \$21 ;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:334" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
     casez (in_rst)
       1'h1:
           \out_ovf$next  = 1'h0;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_ovf$next  = 1'h0;
@@ -1528,12 +1528,12 @@ module \mac$2 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$33 ) begin end
     out_d_valid = 1'h0;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$23 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           out_d_valid = 1'h0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           out_d_valid = 1'h1;
     endcase
@@ -1546,81 +1546,81 @@ endmodule
 (* generator = "Amaranth" *)
 module \mac$3 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
   reg \$auto$verilog_backend.cc:2083:dump_module$34  = 0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *)
   wire [31:0] \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$11 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$13 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$14 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:53" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:53" *)
   wire \$17 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$19 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *)
   wire [15:0] \$2 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *)
   wire \$21 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$23 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *)
   wire [15:0] \$5 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *)
   wire [32:0] \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *)
   wire \$9 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:24" *)
   wire [31:0] current_out;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:25" *)
   wire current_out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:12" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:12" *)
   input [7:0] in_a;
   wire [7:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:13" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:13" *)
   input in_a_valid;
   wire in_a_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:14" *)
   input [7:0] in_b;
   wire [7:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:15" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:15" *)
   input in_b_valid;
   wire in_b_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:17" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:17" *)
   input in_rst;
   wire in_rst;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:23" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:23" *)
   wire [31:0] mult;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   output [31:0] out_d;
   reg [31:0] out_d = 32'd0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:19" *)
   reg [31:0] \out_d$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:20" *)
   reg out_d_valid;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   output out_ovf;
   reg out_ovf = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:21" *)
   reg \out_ovf$next ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$9  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$11  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$14  = mult[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) out_d[31];
-  assign \$13  = ~ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) \$14 ;
-  assign \$17  = mult[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:53" *) current_out[31];
-  assign \$19  = \$13  & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) \$17 ;
-  assign \$21  = \$19  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:52" *) out_ovf;
-  assign \$23  = in_a_valid & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" *) in_b_valid;
-  assign \$2  = $signed(in_a) * (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *) $signed(in_b);
-  assign \$1  = + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:30" *) $signed(\$2 );
-  assign \$5  = $signed(in_a) * (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *) $signed(in_b);
-  assign \$7  = $signed(\$5 ) + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:32" *) $signed(out_d);
+  assign \$9  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$11  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$14  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) out_d[31];
+  assign \$13  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) \$14 ;
+  assign \$17  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:53" *) current_out[31];
+  assign \$19  = \$13  & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) \$17 ;
+  assign \$21  = \$19  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:52" *) out_ovf;
+  assign \$23  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" *) in_b_valid;
+  assign \$2  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *) $signed(in_b);
+  assign \$1  = + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:30" *) $signed(\$2 );
+  assign \$5  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *) $signed(in_b);
+  assign \$7  = $signed(\$5 ) + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:32" *) $signed(out_d);
   always @(posedge clk)
     out_ovf <= \out_ovf$next ;
   always @(posedge clk)
@@ -1628,21 +1628,21 @@ module \mac$3 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$34 ) begin end
     \out_d$next  = out_d;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$9 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           \out_d$next  = 32'd0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           \out_d$next  = current_out;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:334" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
     casez (in_rst)
       1'h1:
           \out_d$next  = 32'd0;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_d$next  = 32'd0;
@@ -1651,21 +1651,21 @@ module \mac$3 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$34 ) begin end
     \out_ovf$next  = out_ovf;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$11 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           \out_ovf$next  = 1'h0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           \out_ovf$next  = \$21 ;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:334" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
     casez (in_rst)
       1'h1:
           \out_ovf$next  = 1'h0;
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_ovf$next  = 1'h0;
@@ -1674,12 +1674,12 @@ module \mac$3 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$34 ) begin end
     out_d_valid = 1'h0;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" *)
     casez ({ \$23 , in_rst })
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:35" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:35" */
       2'b?1:
           out_d_valid = 1'h0;
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\mac.py:43" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/mac.py:43" */
       2'b1?:
           out_d_valid = 1'h1;
     endcase
@@ -1693,188 +1693,188 @@ endmodule
 (* generator = "Amaranth" *)
 module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
   reg \$auto$verilog_backend.cc:2083:dump_module$35  = 0;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *)
   wire [5:0] \$10 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$13 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *)
   wire [5:0] \$15 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *)
   wire [5:0] \$16 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$19 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *)
   wire [5:0] \$21 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *)
   wire [5:0] \$22 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$25 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *)
   wire [5:0] \$27 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *)
   wire [5:0] \$28 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
   wire \$3 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$30 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
   wire \$32 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$34 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
   wire \$36 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$38 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
   wire \$40 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$42 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
   wire \$44 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$46 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
   wire \$48 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$5 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$50 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$52 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
   wire \$54 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$56 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$58 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
   wire \$60 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$62 ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$7 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *)
   wire [5:0] \$9 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:18" *)
   wire [7:0] \U$$0_in_a ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:19" *)
   wire [7:0] \U$$0_in_b ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:14" *)
   reg [4:0] \U$$0_in_init ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:21" *)
   wire [31:0] \U$$0_out_d ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:18" *)
   wire [7:0] \U$$1_in_a ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:19" *)
   wire [7:0] \U$$1_in_b ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:14" *)
   reg [4:0] \U$$1_in_init ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:21" *)
   wire [31:0] \U$$1_out_d ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:18" *)
   wire [7:0] \U$$2_in_a ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:19" *)
   wire [7:0] \U$$2_in_b ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:14" *)
   reg [4:0] \U$$2_in_init ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:21" *)
   wire [31:0] \U$$2_out_d ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:18" *)
   wire [7:0] \U$$3_in_a ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:19" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:19" *)
   wire [7:0] \U$$3_in_b ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:14" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:14" *)
   reg [4:0] \U$$3_in_init ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe.py:21" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe.py:21" *)
   wire [31:0] \U$$3_out_d ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   wire [31:0] adder_tree_in_data_4_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   wire [31:0] adder_tree_in_data_4_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   wire [31:0] adder_tree_in_data_4_2;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   wire [31:0] adder_tree_in_data_4_3;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:24" *)
   wire [31:0] adder_tree_out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:25" *)
   wire adder_tree_out_ovf;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:39" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:39" *)
   reg [4:0] cnt = 5'h00;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:39" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:39" *)
   reg [4:0] \cnt$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
   reg fsm_state = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
   reg \fsm_state$12  = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
   reg \fsm_state$12$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
   reg \fsm_state$18  = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
   reg \fsm_state$18$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
   reg \fsm_state$24  = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
   reg \fsm_state$24$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
   reg \fsm_state$next ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:41" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:41" *)
   input [31:0] in_a;
   wire [31:0] in_a;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:42" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:42" *)
   input [31:0] in_b;
   wire [31:0] in_b;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:38" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:38" *)
   input [4:0] in_init;
   wire [4:0] in_init;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:45" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:45" *)
   output [31:0] out_d;
   wire [31:0] out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:47" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:47" *)
   output out_ovf;
   wire out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:46" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:46" *)
   output out_ready;
   reg out_ready = 1'h0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:46" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:46" *)
   reg \out_ready$next ;
-  (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\ir.py:527" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  assign \$10  = cnt - (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *) 1'h1;
-  assign \$13  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$16  = cnt - (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *) 1'h1;
-  assign \$1  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$19  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$22  = cnt - (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *) 1'h1;
-  assign \$25  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$28  = cnt - (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:84" *) 1'h1;
-  assign \$30  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$32  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *) 1'h1;
-  assign \$34  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$36  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *) 1'h1;
-  assign \$38  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$3  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *) 1'h1;
-  assign \$40  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *) 1'h1;
-  assign \$42  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$44  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *) 1'h1;
-  assign \$46  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$48  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *) 1'h1;
-  assign \$50  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$52  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$54  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *) 1'h1;
-  assign \$56  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$58  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$5  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$60  = cnt == (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *) 1'h1;
-  assign \$62  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
-  assign \$7  = | (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\dsl.py:437" *) in_init;
+  assign \$10  = cnt - (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *) 1'h1;
+  assign \$13  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$16  = cnt - (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *) 1'h1;
+  assign \$1  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$19  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$22  = cnt - (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *) 1'h1;
+  assign \$25  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$28  = cnt - (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:81" *) 1'h1;
+  assign \$30  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$32  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *) 1'h1;
+  assign \$34  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$36  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *) 1'h1;
+  assign \$38  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$3  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *) 1'h1;
+  assign \$40  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *) 1'h1;
+  assign \$42  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$44  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *) 1'h1;
+  assign \$46  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$48  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *) 1'h1;
+  assign \$50  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$52  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$54  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *) 1'h1;
+  assign \$56  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$58  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$5  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$60  = cnt == (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *) 1'h1;
+  assign \$62  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
+  assign \$7  = | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *) in_init;
   always @(posedge clk)
     \fsm_state$24  <= \fsm_state$24$next ;
   always @(posedge clk)
@@ -1931,28 +1931,28 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \fsm_state$12$next  = \fsm_state$12 ;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$12 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$46 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \fsm_state$12$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
           casez (\$48 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" */
             1'h1:
                 \fsm_state$12$next  = 1'h0;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \fsm_state$12$next  = 1'h0;
@@ -1961,14 +1961,14 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \U$$1_in_init  = 5'h00;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$12 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$50 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \U$$1_in_init  = in_init;
           endcase
@@ -1978,28 +1978,28 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \fsm_state$18$next  = \fsm_state$18 ;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$18 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$52 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \fsm_state$18$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
           casez (\$54 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" */
             1'h1:
                 \fsm_state$18$next  = 1'h0;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \fsm_state$18$next  = 1'h0;
@@ -2008,14 +2008,14 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \U$$2_in_init  = 5'h00;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$18 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$56 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \U$$2_in_init  = in_init;
           endcase
@@ -2025,28 +2025,28 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \fsm_state$24$next  = \fsm_state$24 ;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$24 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$58 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \fsm_state$24$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
           casez (\$60 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" */
             1'h1:
                 \fsm_state$24$next  = 1'h0;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \fsm_state$24$next  = 1'h0;
@@ -2055,14 +2055,14 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \U$$3_in_init  = 5'h00;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$24 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$62 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \U$$3_in_init  = in_init;
           endcase
@@ -2072,28 +2072,28 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$1 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \fsm_state$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
           casez (\$3 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" */
             1'h1:
                 \fsm_state$next  = 1'h0;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \fsm_state$next  = 1'h0;
@@ -2102,14 +2102,14 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
   always @* begin
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \U$$0_in_init  = 5'h00;
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$5 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \U$$0_in_init  = in_init;
           endcase
@@ -2119,74 +2119,74 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$7 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \cnt$next  = in_init;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
           \cnt$next  = \$10 [4:0];
     endcase
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$12 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$13 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \cnt$next  = in_init;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
           \cnt$next  = \$16 [4:0];
     endcase
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$18 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$19 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \cnt$next  = in_init;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
           \cnt$next  = \$22 [4:0];
     endcase
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$24 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$25 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \cnt$next  = in_init;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
           \cnt$next  = \$28 [4:0];
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \cnt$next  = 5'h00;
@@ -2196,94 +2196,94 @@ module top(in_b, in_init, out_d, out_ready, out_ovf, clk, rst, in_a);
     if (\$auto$verilog_backend.cc:2083:dump_module$35 ) begin end
     \out_ready$next  = out_ready;
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$30 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \out_ready$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
           casez (\$32 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" */
             1'h1:
                 \out_ready$next  = 1'h1;
           endcase
     endcase
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$12 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$34 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \out_ready$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
           casez (\$36 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" */
             1'h1:
                 \out_ready$next  = 1'h1;
           endcase
     endcase
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$18 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$38 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \out_ready$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
           casez (\$40 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" */
             1'h1:
                 \out_ready$next  = 1'h1;
           endcase
     endcase
     (* full_case = 32'd1 *)
-    (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:71" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:68" *)
     casez (\fsm_state$24 )
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:72" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:69" */
       1'h0:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" *)
           casez (\$42 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:73" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:70" */
             1'h1:
                 \out_ready$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "EXEC/1" */
-      /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:82" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:79" */
       1'h1:
-          (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" *)
           casez (\$44 )
-            /* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\pe_stack.py:86" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/pe_stack.py:83" */
             1'h1:
                 \out_ready$next  = 1'h1;
           endcase
     endcase
-    (* src = "C:\\Python310\\lib\\site-packages\\amaranth\\hdl\\xfrm.py:519" *)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
           \out_ready$next  = 1'h0;
@@ -2312,59 +2312,59 @@ endmodule
 (* \amaranth.hierarchy  = "top.adder_tree.tree_l" *)
 (* generator = "Amaranth" *)
 module tree_l(in_valid_2_0, in_ovf_2_0, in_data_2_1, in_valid_2_1, in_ovf_2_1, out_d, out_valid, out_ovf, in_data_2_0);
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:67" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:67" *)
   wire \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$11 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$13 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$15 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:68" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:68" *)
   wire [32:0] \$3 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$5 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$6 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:73" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:73" *)
   wire \$9 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:29" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:29" *)
   wire current_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   input [31:0] in_data_2_0;
   wire [31:0] in_data_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   input [31:0] in_data_2_1;
   wire [31:0] in_data_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   input in_ovf_2_0;
   wire in_ovf_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   input in_ovf_2_1;
   wire in_ovf_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   input in_valid_2_0;
   wire in_valid_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   input in_valid_2_1;
   wire in_valid_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:24" *)
   output [31:0] out_d;
   wire [31:0] out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:25" *)
   output out_ovf;
   wire out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:26" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:26" *)
   output out_valid;
   wire out_valid;
-  assign \$9  = in_data_2_0[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:73" *) out_d[31];
-  assign \$11  = \$5  & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) \$9 ;
-  assign \$13  = \$11  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) in_ovf_2_0;
-  assign \$15  = \$13  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) in_ovf_2_1;
-  assign \$1  = in_valid_2_0 & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:67" *) in_valid_2_1;
-  assign \$3  = $signed(in_data_2_0) + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:68" *) $signed(in_data_2_1);
-  assign \$6  = in_data_2_0[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) in_data_2_1[31];
-  assign \$5  = ~ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) \$6 ;
+  assign \$9  = in_data_2_0[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:73" *) out_d[31];
+  assign \$11  = \$5  & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) \$9 ;
+  assign \$13  = \$11  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) in_ovf_2_0;
+  assign \$15  = \$13  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) in_ovf_2_1;
+  assign \$1  = in_valid_2_0 & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:67" *) in_valid_2_1;
+  assign \$3  = $signed(in_data_2_0) + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:68" *) $signed(in_data_2_1);
+  assign \$6  = in_data_2_0[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) in_data_2_1[31];
+  assign \$5  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) \$6 ;
   assign out_ovf = \$15 ;
   assign { current_ovf, out_d } = \$3 ;
   assign out_valid = \$1 ;
@@ -2373,59 +2373,59 @@ endmodule
 (* \amaranth.hierarchy  = "top.adder_tree.tree_r" *)
 (* generator = "Amaranth" *)
 module tree_r(in_valid_2_0, in_ovf_2_0, in_data_2_1, in_valid_2_1, in_ovf_2_1, out_d, out_valid, out_ovf, in_data_2_0);
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:67" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:67" *)
   wire \$1 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$11 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$13 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$15 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:68" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:68" *)
   wire [32:0] \$3 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$5 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *)
   wire \$6 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:73" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:73" *)
   wire \$9 ;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:29" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:29" *)
   wire current_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   input [31:0] in_data_2_0;
   wire [31:0] in_data_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:18" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:18" *)
   input [31:0] in_data_2_1;
   wire [31:0] in_data_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   input in_ovf_2_0;
   wire in_ovf_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:20" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:20" *)
   input in_ovf_2_1;
   wire in_ovf_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   input in_valid_2_0;
   wire in_valid_2_0;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:22" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:22" *)
   input in_valid_2_1;
   wire in_valid_2_1;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:24" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:24" *)
   output [31:0] out_d;
   wire [31:0] out_d;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:25" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:25" *)
   output out_ovf;
   wire out_ovf;
-  (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:26" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:26" *)
   output out_valid;
   wire out_valid;
-  assign \$9  = in_data_2_0[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:73" *) out_d[31];
-  assign \$11  = \$5  & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) \$9 ;
-  assign \$13  = \$11  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) in_ovf_2_0;
-  assign \$15  = \$13  | (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) in_ovf_2_1;
-  assign \$1  = in_valid_2_0 & (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:67" *) in_valid_2_1;
-  assign \$3  = $signed(in_data_2_0) + (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:68" *) $signed(in_data_2_1);
-  assign \$6  = in_data_2_0[31] ^ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) in_data_2_1[31];
-  assign \$5  = ~ (* src = "D:\\Github\\SNUHSD2023Spring\\Lab4\\Practice\\adder_tree.py:72" *) \$6 ;
+  assign \$9  = in_data_2_0[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:73" *) out_d[31];
+  assign \$11  = \$5  & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) \$9 ;
+  assign \$13  = \$11  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) in_ovf_2_0;
+  assign \$15  = \$13  | (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) in_ovf_2_1;
+  assign \$1  = in_valid_2_0 & (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:67" *) in_valid_2_1;
+  assign \$3  = $signed(in_data_2_0) + (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:68" *) $signed(in_data_2_1);
+  assign \$6  = in_data_2_0[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) in_data_2_1[31];
+  assign \$5  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab4/Practice/adder_tree.py:72" *) \$6 ;
   assign out_ovf = \$15 ;
   assign { current_ovf, out_d } = \$3 ;
   assign out_valid = \$1 ;
