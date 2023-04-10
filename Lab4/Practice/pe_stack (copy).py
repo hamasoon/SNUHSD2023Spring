@@ -62,14 +62,14 @@ class PEStack(Elaboratable):
             m.d.comb += [
                 pe.in_a.eq(self.in_a[self.num_bits * i:self.num_bits * (i + 1)]),
                 pe.in_b.eq(self.in_b[self.num_bits * i:self.num_bits * (i + 1)]),
+            ]
+
+            m.d.comb += [
                 self.adder_tree.in_data[i].eq(pe.out_d)
             ]
 
             with m.FSM(reset='INIT'):
                 with m.State('INIT'):
-                    m.d.comb += [
-                        self.adder_tree.in_valid[i].eq(0)
-                    ]
                     with m.If(self.in_init):
                         m.next = 'EXEC'
                         m.d.comb += [
@@ -80,9 +80,6 @@ class PEStack(Elaboratable):
                             self.out_ready.eq(0)
                         ]
                 with m.State('EXEC'):
-                    m.d.comb += [
-                        self.adder_tree.in_valid[i].eq(1)
-                    ]
                     m.d.sync += [
                         self.cnt.eq(self.cnt - 1)
                     ]
@@ -91,7 +88,9 @@ class PEStack(Elaboratable):
                             self.out_ready.eq(1)
                         ]
                         m.next = 'INIT'
-                        
+
+            # TODO
+
         return m
 
 
