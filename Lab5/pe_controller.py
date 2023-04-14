@@ -131,6 +131,7 @@ class PEControl(Elaboratable):
 
         # global buffer fused address
         self.addr_io = Signal(self.gb_addr_width)
+        self.addr_i0_cache = Signal(self.gb_addr_width)
         self.addr_io_ovf = Signal(1)
 
         # 1 PE stack
@@ -198,7 +199,8 @@ class PEControl(Elaboratable):
                 # TODO
                 with m.If(self.in_r_data == 0xCAFE0000):
                     m.d.sync += [
-                        self.cnt_fetch.eq(0)
+                        self.cnt_fetch.eq(0),
+                        self.addr_i0_cache.eq(0)
                     ]
                     m.next = 'FETCH'
             with m.State('FETCH'):
@@ -206,13 +208,14 @@ class PEControl(Elaboratable):
                 with m.If(self.cnt_fetch):
                     m.d.sync += [
                         self.cnt_fetch.eq(0),
-                        Cat(self.addr_io, self.addr_io_ovf).eq(self.in_r_data[0:9] + 1),
-                        Cat(self.next_pc, self.next_pc_ovf).eq(self.next_pc + 1) 
+                        Cat(self.next_pc, self.next_pc_ovf).eq(self.next_pc + 1),
+                        self.addr_i0_cache.eq(self.addr_io)
                     ]
                     m.next = 'DECODE'
                 with m.Else():
                     m.d.sync += [
                         self.cnt_fetch.eq(1),
+                        Cat(self.addr_io, self.addr_io_ovf).eq(self.addr_i0_cache + 1)
                     ]
             with m.State('DECODE'):
                 with m.Switch(self.opcode):
@@ -221,6 +224,9 @@ class PEControl(Elaboratable):
                         # 4b     4b               24b
                         # load   to[a|b]          from(gb_addr)
                         m.next = 'LOAD'
+                        m.d.sync += [
+                            self.addr_io.eq(self.v2_f)
+                        ]
                         # TODO
                     with m.Case(OPCODE.EXEC):
                         # OP     V1               V2
@@ -266,29 +272,32 @@ class PEControl(Elaboratable):
 
             with m.State('LOAD'):
                 # TODO
+                m.d.sync += [
+                    Cat(self.addr_io, self.addr_io_ovf).eq(self.addr_io + 1)
+                ]
 
-                with m.If(self.fan_cnt < self.fan_in - 1):
+                with m.If(self.fan_cnt < self.fan_in):
                     m.d.sync += [
                         Cat(self.fan_cnt ,self.fan_cnt_ovf).eq(self.fan_cnt_next)
                     ]
                     with m.Switch(self.v1):
                         with m.Case(LOAD_DEST.A):
                             m.d.sync += [
-                                self.lb_a.r_en.eq(1)
+                                self.lb_a.w_en.eq(1)
                             ]
                         with m.Case():
                             m.d.sync += [
-                                self.lb_b.r_en.eq(1)
+                                self.lb_b.w_en.eq(1)
                             ]
                 with m.Else():
                     with m.Switch(self.v1):
                         with m.Case(LOAD_DEST.A):
                             m.d.sync += [
-                                self.lb_a.r_en.eq(0)
+                                self.lb_a.w_en.eq(0)
                             ]
                         with m.Case():
                             m.d.sync += [
-                                self.lb_b.r_en.eq(0)
+                                self.lb_b.w_en.eq(0)
                             ]
                     m.d.sync += [
                         self.fan_cnt.eq(0)

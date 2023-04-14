@@ -3,7 +3,7 @@
 (* \amaranth.hierarchy  = "top.pe.U$$0" *)
 (* generator = "Amaranth" *)
 module \U$$0 (clk, in_a, in_b, out_d, in_init, rst);
-  reg \$auto$verilog_backend.cc:2083:dump_module$46  = 0;
+  reg \$auto$verilog_backend.cc:2083:dump_module$48  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:69" *)
@@ -91,7 +91,7 @@ module \U$$0 (clk, in_a, in_b, out_d, in_init, rst);
     .rst(rst)
   );
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$46 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -106,7 +106,7 @@ module \U$$0 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$46 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -121,7 +121,7 @@ module \U$$0 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$46 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -152,7 +152,7 @@ module \U$$0 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$46 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -176,7 +176,7 @@ module \U$$0 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$46 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -202,7 +202,7 @@ module \U$$0 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$46 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
     \out_d_valid$next  = out_d_valid;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -242,7 +242,7 @@ endmodule
 (* \amaranth.hierarchy  = "top.pe.U$$1" *)
 (* generator = "Amaranth" *)
 module \U$$1 (clk, in_a, in_b, out_d, in_init, rst);
-  reg \$auto$verilog_backend.cc:2083:dump_module$47  = 0;
+  reg \$auto$verilog_backend.cc:2083:dump_module$49  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:69" *)
@@ -330,7 +330,7 @@ module \U$$1 (clk, in_a, in_b, out_d, in_init, rst);
     .rst(rst)
   );
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$47 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -345,7 +345,7 @@ module \U$$1 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$47 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -360,7 +360,7 @@ module \U$$1 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$47 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -391,7 +391,7 @@ module \U$$1 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$47 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -415,7 +415,7 @@ module \U$$1 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$47 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -441,7 +441,7 @@ module \U$$1 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$47 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
     \out_d_valid$next  = out_d_valid;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -481,7 +481,7 @@ endmodule
 (* \amaranth.hierarchy  = "top.pe.U$$2" *)
 (* generator = "Amaranth" *)
 module \U$$2 (clk, in_a, in_b, out_d, in_init, rst);
-  reg \$auto$verilog_backend.cc:2083:dump_module$48  = 0;
+  reg \$auto$verilog_backend.cc:2083:dump_module$50  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:69" *)
@@ -569,7 +569,7 @@ module \U$$2 (clk, in_a, in_b, out_d, in_init, rst);
     .rst(rst)
   );
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -584,7 +584,7 @@ module \U$$2 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -599,7 +599,7 @@ module \U$$2 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -630,7 +630,7 @@ module \U$$2 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -654,7 +654,7 @@ module \U$$2 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -680,7 +680,7 @@ module \U$$2 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$48 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
     \out_d_valid$next  = out_d_valid;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -720,7 +720,7 @@ endmodule
 (* \amaranth.hierarchy  = "top.pe.U$$3" *)
 (* generator = "Amaranth" *)
 module \U$$3 (clk, in_a, in_b, out_d, in_init, rst);
-  reg \$auto$verilog_backend.cc:2083:dump_module$49  = 0;
+  reg \$auto$verilog_backend.cc:2083:dump_module$51  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:69" *)
@@ -808,7 +808,7 @@ module \U$$3 (clk, in_a, in_b, out_d, in_init, rst);
     .rst(rst)
   );
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -823,7 +823,7 @@ module \U$$3 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -838,7 +838,7 @@ module \U$$3 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -869,7 +869,7 @@ module \U$$3 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
     casez (fsm_state)
@@ -893,7 +893,7 @@ module \U$$3 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -919,7 +919,7 @@ module \U$$3 (clk, in_a, in_b, out_d, in_init, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$49 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
     \out_d_valid$next  = out_d_valid;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe.py:41" *)
@@ -1107,298 +1107,6 @@ endmodule
 (* \amaranth.hierarchy  = "top.pe.U$$0.mac" *)
 (* generator = "Amaranth" *)
 module mac(clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
-  reg \$auto$verilog_backend.cc:2083:dump_module$50  = 0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
-  wire [31:0] \$1 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
-  wire \$11 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
-  wire \$13 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
-  wire \$14 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:53" *)
-  wire \$17 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
-  wire \$19 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
-  wire [15:0] \$2 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
-  wire \$21 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
-  wire \$23 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *)
-  wire [15:0] \$5 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *)
-  wire [32:0] \$7 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
-  wire \$9 ;
-  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
-  input clk;
-  wire clk;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:24" *)
-  wire [31:0] current_out;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:25" *)
-  wire current_out_ovf;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:12" *)
-  input [7:0] in_a;
-  wire [7:0] in_a;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:13" *)
-  input in_a_valid;
-  wire in_a_valid;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:14" *)
-  input [7:0] in_b;
-  wire [7:0] in_b;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:15" *)
-  input in_b_valid;
-  wire in_b_valid;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:17" *)
-  input in_rst;
-  wire in_rst;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:23" *)
-  wire [31:0] mult;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:19" *)
-  output [31:0] out_d;
-  reg [31:0] out_d = 32'd0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:19" *)
-  reg [31:0] \out_d$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:20" *)
-  reg out_d_valid;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:21" *)
-  output out_ovf;
-  reg out_ovf = 1'h0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:21" *)
-  reg \out_ovf$next ;
-  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
-  input rst;
-  wire rst;
-  assign \$9  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
-  assign \$11  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
-  assign \$14  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) out_d[31];
-  assign \$13  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) \$14 ;
-  assign \$17  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:53" *) current_out[31];
-  assign \$19  = \$13  & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) \$17 ;
-  assign \$21  = \$19  | (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) out_ovf;
-  assign \$23  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
-  assign \$2  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *) $signed(in_b);
-  assign \$1  = + (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *) $signed(\$2 );
-  assign \$5  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *) $signed(in_b);
-  assign \$7  = $signed(\$5 ) + (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *) $signed(out_d);
-  always @(posedge clk)
-    out_ovf <= \out_ovf$next ;
-  always @(posedge clk)
-    out_d <= \out_d$next ;
-  always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
-    \out_d$next  = out_d;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
-    casez ({ \$9 , in_rst })
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
-      2'b?1:
-          \out_d$next  = 32'd0;
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
-      2'b1?:
-          \out_d$next  = current_out;
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
-    casez (in_rst)
-      1'h1:
-          \out_d$next  = 32'd0;
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
-    casez (rst)
-      1'h1:
-          \out_d$next  = 32'd0;
-    endcase
-  end
-  always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
-    \out_ovf$next  = out_ovf;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
-    casez ({ \$11 , in_rst })
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
-      2'b?1:
-          \out_ovf$next  = 1'h0;
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
-      2'b1?:
-          \out_ovf$next  = \$21 ;
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
-    casez (in_rst)
-      1'h1:
-          \out_ovf$next  = 1'h0;
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
-    casez (rst)
-      1'h1:
-          \out_ovf$next  = 1'h0;
-    endcase
-  end
-  always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$50 ) begin end
-    out_d_valid = 1'h0;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
-    casez ({ \$23 , in_rst })
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
-      2'b?1:
-          out_d_valid = 1'h0;
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
-      2'b1?:
-          out_d_valid = 1'h1;
-    endcase
-  end
-  assign { current_out_ovf, current_out } = \$7 ;
-  assign mult = \$1 ;
-endmodule
-
-(* \amaranth.hierarchy  = "top.pe.U$$1.mac" *)
-(* generator = "Amaranth" *)
-module \mac$1 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
-  reg \$auto$verilog_backend.cc:2083:dump_module$51  = 0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
-  wire [31:0] \$1 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
-  wire \$11 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
-  wire \$13 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
-  wire \$14 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:53" *)
-  wire \$17 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
-  wire \$19 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
-  wire [15:0] \$2 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
-  wire \$21 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
-  wire \$23 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *)
-  wire [15:0] \$5 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *)
-  wire [32:0] \$7 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
-  wire \$9 ;
-  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
-  input clk;
-  wire clk;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:24" *)
-  wire [31:0] current_out;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:25" *)
-  wire current_out_ovf;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:12" *)
-  input [7:0] in_a;
-  wire [7:0] in_a;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:13" *)
-  input in_a_valid;
-  wire in_a_valid;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:14" *)
-  input [7:0] in_b;
-  wire [7:0] in_b;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:15" *)
-  input in_b_valid;
-  wire in_b_valid;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:17" *)
-  input in_rst;
-  wire in_rst;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:23" *)
-  wire [31:0] mult;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:19" *)
-  output [31:0] out_d;
-  reg [31:0] out_d = 32'd0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:19" *)
-  reg [31:0] \out_d$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:20" *)
-  reg out_d_valid;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:21" *)
-  output out_ovf;
-  reg out_ovf = 1'h0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:21" *)
-  reg \out_ovf$next ;
-  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
-  input rst;
-  wire rst;
-  assign \$9  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
-  assign \$11  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
-  assign \$14  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) out_d[31];
-  assign \$13  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) \$14 ;
-  assign \$17  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:53" *) current_out[31];
-  assign \$19  = \$13  & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) \$17 ;
-  assign \$21  = \$19  | (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) out_ovf;
-  assign \$23  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
-  assign \$2  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *) $signed(in_b);
-  assign \$1  = + (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *) $signed(\$2 );
-  assign \$5  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *) $signed(in_b);
-  assign \$7  = $signed(\$5 ) + (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *) $signed(out_d);
-  always @(posedge clk)
-    out_ovf <= \out_ovf$next ;
-  always @(posedge clk)
-    out_d <= \out_d$next ;
-  always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
-    \out_d$next  = out_d;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
-    casez ({ \$9 , in_rst })
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
-      2'b?1:
-          \out_d$next  = 32'd0;
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
-      2'b1?:
-          \out_d$next  = current_out;
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
-    casez (in_rst)
-      1'h1:
-          \out_d$next  = 32'd0;
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
-    casez (rst)
-      1'h1:
-          \out_d$next  = 32'd0;
-    endcase
-  end
-  always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
-    \out_ovf$next  = out_ovf;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
-    casez ({ \$11 , in_rst })
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
-      2'b?1:
-          \out_ovf$next  = 1'h0;
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
-      2'b1?:
-          \out_ovf$next  = \$21 ;
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
-    casez (in_rst)
-      1'h1:
-          \out_ovf$next  = 1'h0;
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
-    casez (rst)
-      1'h1:
-          \out_ovf$next  = 1'h0;
-    endcase
-  end
-  always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$51 ) begin end
-    out_d_valid = 1'h0;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
-    casez ({ \$23 , in_rst })
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
-      2'b?1:
-          out_d_valid = 1'h0;
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
-      2'b1?:
-          out_d_valid = 1'h1;
-    endcase
-  end
-  assign { current_out_ovf, current_out } = \$7 ;
-  assign mult = \$1 ;
-endmodule
-
-(* \amaranth.hierarchy  = "top.pe.U$$2.mac" *)
-(* generator = "Amaranth" *)
-module \mac$2 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
   reg \$auto$verilog_backend.cc:2083:dump_module$52  = 0;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
   wire [31:0] \$1 ;
@@ -1542,9 +1250,9 @@ module \mac$2 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   assign mult = \$1 ;
 endmodule
 
-(* \amaranth.hierarchy  = "top.pe.U$$3.mac" *)
+(* \amaranth.hierarchy  = "top.pe.U$$1.mac" *)
 (* generator = "Amaranth" *)
-module \mac$3 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
+module \mac$1 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
   reg \$auto$verilog_backend.cc:2083:dump_module$53  = 0;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
   wire [31:0] \$1 ;
@@ -1688,10 +1396,302 @@ module \mac$3 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, 
   assign mult = \$1 ;
 endmodule
 
+(* \amaranth.hierarchy  = "top.pe.U$$2.mac" *)
+(* generator = "Amaranth" *)
+module \mac$2 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
+  reg \$auto$verilog_backend.cc:2083:dump_module$54  = 0;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
+  wire [31:0] \$1 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
+  wire \$11 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
+  wire \$13 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
+  wire \$14 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:53" *)
+  wire \$17 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
+  wire \$19 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
+  wire [15:0] \$2 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
+  wire \$21 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
+  wire \$23 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *)
+  wire [15:0] \$5 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *)
+  wire [32:0] \$7 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
+  wire \$9 ;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
+  input clk;
+  wire clk;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:24" *)
+  wire [31:0] current_out;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:25" *)
+  wire current_out_ovf;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:12" *)
+  input [7:0] in_a;
+  wire [7:0] in_a;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:13" *)
+  input in_a_valid;
+  wire in_a_valid;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:14" *)
+  input [7:0] in_b;
+  wire [7:0] in_b;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:15" *)
+  input in_b_valid;
+  wire in_b_valid;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:17" *)
+  input in_rst;
+  wire in_rst;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:23" *)
+  wire [31:0] mult;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:19" *)
+  output [31:0] out_d;
+  reg [31:0] out_d = 32'd0;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:19" *)
+  reg [31:0] \out_d$next ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:20" *)
+  reg out_d_valid;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:21" *)
+  output out_ovf;
+  reg out_ovf = 1'h0;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:21" *)
+  reg \out_ovf$next ;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
+  input rst;
+  wire rst;
+  assign \$9  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
+  assign \$11  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
+  assign \$14  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) out_d[31];
+  assign \$13  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) \$14 ;
+  assign \$17  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:53" *) current_out[31];
+  assign \$19  = \$13  & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) \$17 ;
+  assign \$21  = \$19  | (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) out_ovf;
+  assign \$23  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
+  assign \$2  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *) $signed(in_b);
+  assign \$1  = + (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *) $signed(\$2 );
+  assign \$5  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *) $signed(in_b);
+  assign \$7  = $signed(\$5 ) + (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *) $signed(out_d);
+  always @(posedge clk)
+    out_ovf <= \out_ovf$next ;
+  always @(posedge clk)
+    out_d <= \out_d$next ;
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    \out_d$next  = out_d;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
+    casez ({ \$9 , in_rst })
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
+      2'b?1:
+          \out_d$next  = 32'd0;
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
+      2'b1?:
+          \out_d$next  = current_out;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
+    casez (in_rst)
+      1'h1:
+          \out_d$next  = 32'd0;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
+    casez (rst)
+      1'h1:
+          \out_d$next  = 32'd0;
+    endcase
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    \out_ovf$next  = out_ovf;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
+    casez ({ \$11 , in_rst })
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
+      2'b?1:
+          \out_ovf$next  = 1'h0;
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
+      2'b1?:
+          \out_ovf$next  = \$21 ;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
+    casez (in_rst)
+      1'h1:
+          \out_ovf$next  = 1'h0;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
+    casez (rst)
+      1'h1:
+          \out_ovf$next  = 1'h0;
+    endcase
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    out_d_valid = 1'h0;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
+    casez ({ \$23 , in_rst })
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
+      2'b?1:
+          out_d_valid = 1'h0;
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
+      2'b1?:
+          out_d_valid = 1'h1;
+    endcase
+  end
+  assign { current_out_ovf, current_out } = \$7 ;
+  assign mult = \$1 ;
+endmodule
+
+(* \amaranth.hierarchy  = "top.pe.U$$3.mac" *)
+(* generator = "Amaranth" *)
+module \mac$3 (clk, in_a, in_b, out_d, out_ovf, in_a_valid, in_b_valid, in_rst, rst);
+  reg \$auto$verilog_backend.cc:2083:dump_module$55  = 0;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
+  wire [31:0] \$1 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
+  wire \$11 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
+  wire \$13 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
+  wire \$14 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:53" *)
+  wire \$17 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
+  wire \$19 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *)
+  wire [15:0] \$2 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *)
+  wire \$21 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
+  wire \$23 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *)
+  wire [15:0] \$5 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *)
+  wire [32:0] \$7 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *)
+  wire \$9 ;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
+  input clk;
+  wire clk;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:24" *)
+  wire [31:0] current_out;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:25" *)
+  wire current_out_ovf;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:12" *)
+  input [7:0] in_a;
+  wire [7:0] in_a;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:13" *)
+  input in_a_valid;
+  wire in_a_valid;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:14" *)
+  input [7:0] in_b;
+  wire [7:0] in_b;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:15" *)
+  input in_b_valid;
+  wire in_b_valid;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:17" *)
+  input in_rst;
+  wire in_rst;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:23" *)
+  wire [31:0] mult;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:19" *)
+  output [31:0] out_d;
+  reg [31:0] out_d = 32'd0;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:19" *)
+  reg [31:0] \out_d$next ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:20" *)
+  reg out_d_valid;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:21" *)
+  output out_ovf;
+  reg out_ovf = 1'h0;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:21" *)
+  reg \out_ovf$next ;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
+  input rst;
+  wire rst;
+  assign \$9  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
+  assign \$11  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
+  assign \$14  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) out_d[31];
+  assign \$13  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) \$14 ;
+  assign \$17  = mult[31] ^ (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:53" *) current_out[31];
+  assign \$19  = \$13  & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) \$17 ;
+  assign \$21  = \$19  | (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:52" *) out_ovf;
+  assign \$23  = in_a_valid & (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" *) in_b_valid;
+  assign \$2  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *) $signed(in_b);
+  assign \$1  = + (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:30" *) $signed(\$2 );
+  assign \$5  = $signed(in_a) * (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *) $signed(in_b);
+  assign \$7  = $signed(\$5 ) + (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:32" *) $signed(out_d);
+  always @(posedge clk)
+    out_ovf <= \out_ovf$next ;
+  always @(posedge clk)
+    out_d <= \out_d$next ;
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$55 ) begin end
+    \out_d$next  = out_d;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
+    casez ({ \$9 , in_rst })
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
+      2'b?1:
+          \out_d$next  = 32'd0;
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
+      2'b1?:
+          \out_d$next  = current_out;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
+    casez (in_rst)
+      1'h1:
+          \out_d$next  = 32'd0;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
+    casez (rst)
+      1'h1:
+          \out_d$next  = 32'd0;
+    endcase
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$55 ) begin end
+    \out_ovf$next  = out_ovf;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
+    casez ({ \$11 , in_rst })
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
+      2'b?1:
+          \out_ovf$next  = 1'h0;
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
+      2'b1?:
+          \out_ovf$next  = \$21 ;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:334" *)
+    casez (in_rst)
+      1'h1:
+          \out_ovf$next  = 1'h0;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
+    casez (rst)
+      1'h1:
+          \out_ovf$next  = 1'h0;
+    endcase
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$55 ) begin end
+    out_d_valid = 1'h0;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" *)
+    casez ({ \$23 , in_rst })
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:35" */
+      2'b?1:
+          out_d_valid = 1'h0;
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/mac.py:43" */
+      2'b1?:
+          out_d_valid = 1'h1;
+    endcase
+  end
+  assign { current_out_ovf, current_out } = \$7 ;
+  assign mult = \$1 ;
+endmodule
+
 (* \amaranth.hierarchy  = "top.pe" *)
 (* generator = "Amaranth" *)
 module pe(in_b, out_d, rst, clk, in_a);
-  reg \$auto$verilog_backend.cc:2083:dump_module$54  = 0;
+  reg \$auto$verilog_backend.cc:2083:dump_module$56  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/dsl.py:437" *)
   wire \$1 ;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:87" *)
@@ -1920,7 +1920,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     .out_ovf(adder_tree_out_ovf)
   );
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
     casez (\fsm_state$12 )
@@ -1935,7 +1935,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \fsm_state$12$next  = \fsm_state$12 ;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
@@ -1966,7 +1966,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \U$$1_in_init  = 10'h000;
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
     casez (\fsm_state$12 )
@@ -1982,7 +1982,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
     casez (\fsm_state$18 )
@@ -1997,7 +1997,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \fsm_state$18$next  = \fsm_state$18 ;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
@@ -2028,7 +2028,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \U$$2_in_init  = 10'h000;
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
     casez (\fsm_state$18 )
@@ -2044,7 +2044,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
     casez (\fsm_state$24 )
@@ -2059,7 +2059,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \fsm_state$24$next  = \fsm_state$24 ;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
@@ -2090,7 +2090,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \U$$3_in_init  = 10'h000;
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
     casez (\fsm_state$24 )
@@ -2106,7 +2106,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
     casez (fsm_state)
@@ -2121,7 +2121,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \fsm_state$next  = fsm_state;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
@@ -2152,7 +2152,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \U$$0_in_init  = 10'h000;
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
     casez (fsm_state)
@@ -2168,7 +2168,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \cnt$next  = cnt;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
@@ -2245,7 +2245,7 @@ module pe(in_b, out_d, rst, clk, in_a);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$54 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
     \out_ready$next  = out_ready;
     (* full_case = 32'd1 *)
     (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:68" *)
@@ -2380,8 +2380,8 @@ endmodule
 
 (* \amaranth.hierarchy  = "top.pipe_a" *)
 (* generator = "Amaranth" *)
-module pipe_a(r_data, r_en, rst, clk, w_data);
-  reg \$auto$verilog_backend.cc:2083:dump_module$55  = 0;
+module pipe_a(r_data, w_en, rst, clk, w_data);
+  reg \$auto$verilog_backend.cc:2083:dump_module$57  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:250" *)
   wire \$1 ;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:250" *)
@@ -2401,7 +2401,6 @@ module pipe_a(r_data, r_en, rst, clk, w_data);
   output [31:0] r_data;
   wire [31:0] r_data;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:85" *)
-  input r_en;
   wire r_en;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:86" *)
   wire [10:0] r_level;
@@ -2430,13 +2429,13 @@ module pipe_a(r_data, r_en, rst, clk, w_data);
   input [31:0] w_data;
   wire [31:0] w_data;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:80" *)
+  input w_en;
   wire w_en;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:81" *)
   wire [10:0] w_level;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:79" *)
   wire w_rdy;
   assign \$1  = ~ (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:250" *) r_rdy;
-  assign \$3  = \$1  | (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:250" *) r_en;
   assign \$5  = unbuffered_r_rdy & (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:250" *) \$3 ;
   assign \$8  = unbuffered_level + (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:258" *) r_rdy;
   always @(posedge clk)
@@ -2449,11 +2448,11 @@ module pipe_a(r_data, r_en, rst, clk, w_data);
     .r_rdy(unbuffered_r_rdy),
     .rst(rst),
     .w_data(unbuffered_w_data),
-    .w_en(1'h0),
+    .w_en(unbuffered_w_en),
     .w_rdy(unbuffered_w_rdy)
   );
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$55 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
     \r_rdy$next  = r_rdy;
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:252" *)
     casez ({ r_en, unbuffered_r_en })
@@ -2471,21 +2470,22 @@ module pipe_a(r_data, r_en, rst, clk, w_data);
     endcase
   end
   assign \$7  = \$8 ;
-  assign w_en = 1'h0;
+  assign r_en = 1'h0;
   assign r_level = level;
   assign w_level = level;
   assign level = \$8 [10:0];
   assign unbuffered_r_en = \$5 ;
   assign r_data = unbuffered_r_data;
   assign w_rdy = unbuffered_w_rdy;
-  assign unbuffered_w_en = 1'h0;
+  assign unbuffered_w_en = w_en;
   assign unbuffered_w_data = w_data;
+  assign \$3  = \$1 ;
 endmodule
 
 (* \amaranth.hierarchy  = "top.pipe_b" *)
 (* generator = "Amaranth" *)
-module pipe_b(r_data, r_en, r_rdy, rst, clk, w_data);
-  reg \$auto$verilog_backend.cc:2083:dump_module$56  = 0;
+module pipe_b(r_data, r_en, w_en, r_rdy, rst, clk, w_data);
+  reg \$auto$verilog_backend.cc:2083:dump_module$58  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:250" *)
   wire \$1 ;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:250" *)
@@ -2535,6 +2535,7 @@ module pipe_b(r_data, r_en, r_rdy, rst, clk, w_data);
   input [31:0] w_data;
   wire [31:0] w_data;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:80" *)
+  input w_en;
   wire w_en;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:81" *)
   wire [10:0] w_level;
@@ -2554,11 +2555,11 @@ module pipe_b(r_data, r_en, r_rdy, rst, clk, w_data);
     .r_rdy(unbuffered_r_rdy),
     .rst(rst),
     .w_data(unbuffered_w_data),
-    .w_en(1'h0),
+    .w_en(unbuffered_w_en),
     .w_rdy(unbuffered_w_rdy)
   );
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$56 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$58 ) begin end
     \r_rdy$next  = r_rdy;
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:252" *)
     casez ({ r_en, unbuffered_r_en })
@@ -2576,14 +2577,13 @@ module pipe_b(r_data, r_en, r_rdy, rst, clk, w_data);
     endcase
   end
   assign \$7  = \$8 ;
-  assign w_en = 1'h0;
   assign r_level = level;
   assign w_level = level;
   assign level = \$8 [10:0];
   assign unbuffered_r_en = \$5 ;
   assign r_data = unbuffered_r_data;
   assign w_rdy = unbuffered_w_rdy;
-  assign unbuffered_w_en = 1'h0;
+  assign unbuffered_w_en = w_en;
   assign unbuffered_w_data = w_data;
 endmodule
 
@@ -2591,73 +2591,71 @@ endmodule
 (* top =  1  *)
 (* generator = "Amaranth" *)
 module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
-  reg \$auto$verilog_backend.cc:2083:dump_module$57  = 0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:183" *)
+  reg \$auto$verilog_backend.cc:2083:dump_module$59  = 0;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:184" *)
   wire [31:0] \$1 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-  wire [10:0] \$10 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *)
+  wire \$10 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *)
   wire \$12 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:306" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:315" *)
   wire \$14 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:209" *)
-  wire [10:0] \$16 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:209" *)
-  wire [9:0] \$17 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:210" *)
-  wire [8:0] \$20 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-  wire [10:0] \$22 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:211" *)
+  wire [8:0] \$16 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:218" *)
+  wire [10:0] \$18 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:276" *)
+  wire [10:0] \$20 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:315" *)
+  wire \$22 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *)
   wire \$24 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:306" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *)
   wire \$26 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-  wire [10:0] \$28 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-  wire \$30 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-  wire [10:0] \$32 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-  wire \$34 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:190" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *)
+  wire \$28 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:191" *)
   wire [10:0] \$4 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:199" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *)
   wire \$6 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:199" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *)
   wire \$8 ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:134" *)
+  reg [9:0] addr_i0_cache = 10'h000;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:134" *)
+  reg [9:0] \addr_i0_cache$next ;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:133" *)
   reg [9:0] addr_io = 10'h000;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:133" *)
   reg [9:0] \addr_io$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:134" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:135" *)
   reg addr_io_ovf = 1'h0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:134" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:135" *)
   reg \addr_io_ovf$next ;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:171" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:172" *)
   reg cnt_fetch = 1'h0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:171" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:172" *)
   reg \cnt_fetch$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:157" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:158" *)
   reg [9:0] fan_cnt = 10'h000;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:157" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:158" *)
   reg [9:0] \fan_cnt$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:159" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:160" *)
   wire [10:0] fan_cnt_next;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:158" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:159" *)
   reg fan_cnt_ovf = 1'h0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:158" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:159" *)
   reg \fan_cnt_ovf$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:156" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:157" *)
   reg [9:0] fan_in = 10'h000;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:156" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:157" *)
   reg [9:0] \fan_in$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
   reg [2:0] fsm_state = 3'h0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
   reg [2:0] \fsm_state$next ;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:126" *)
   input [31:0] in_r_data;
@@ -2666,15 +2664,15 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
   wire in_rst;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:123" *)
   wire \in_rst$3 ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:146" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:147" *)
   reg [7:0] next_pc = 8'h01;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:146" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:147" *)
   reg [7:0] \next_pc$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:147" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:148" *)
   reg next_pc_ovf = 1'h0;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:147" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:148" *)
   reg \next_pc_ovf$next ;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:149" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:150" *)
   wire [3:0] opcode;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:127" *)
   output [9:0] out_r_addr;
@@ -2694,16 +2692,16 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
   wire [31:0] pe_in_b;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_stack.py:45" *)
   wire [31:0] pe_out_d;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:168" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:169" *)
   wire [31:0] pe_ptr;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:83" *)
   wire [31:0] pipe_a_r_data;
-  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:85" *)
-  reg pipe_a_r_en = 1'h0;
-  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:85" *)
-  reg \pipe_a_r_en$next ;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:78" *)
   wire [31:0] pipe_a_w_data;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:80" *)
+  reg pipe_a_w_en = 1'h0;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:80" *)
+  reg \pipe_a_w_en$next ;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:83" *)
   wire [31:0] pipe_b_r_data;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:85" *)
@@ -2714,39 +2712,46 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
   wire pipe_b_r_rdy;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:78" *)
   wire [31:0] pipe_b_w_data;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:161" *)
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:80" *)
+  reg pipe_b_w_en = 1'h0;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:80" *)
+  reg \pipe_b_w_en$next ;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:162" *)
   wire reuse_b;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:150" *)
-  wire [3:0] v1;
   (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:151" *)
+  wire [3:0] v1;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:152" *)
   wire [23:0] v2;
-  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:153" *)
+  (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:154" *)
   wire [9:0] v2_f;
-  assign \$10  = fan_in - (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *) 1'h1;
-  assign \$12  = fan_cnt < (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *) \$10 ;
-  assign \$14  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:306" *) pipe_b_r_rdy;
-  assign \$17  = in_r_data[8:0] + (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:209" *) 1'h1;
-  assign \$16  = + (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:209" *) \$17 ;
-  assign \$20  = next_pc + (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:210" *) 1'h1;
-  assign \$22  = fan_in - (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *) 1'h1;
-  assign \$24  = fan_cnt < (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *) \$22 ;
-  assign \$26  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:306" *) pipe_b_r_rdy;
-  assign \$28  = fan_in - (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *) 1'h1;
-  assign \$30  = fan_cnt < (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *) \$28 ;
-  assign \$32  = fan_in - (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *) 1'h1;
-  assign \$34  = fan_cnt < (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *) \$32 ;
-  assign \$4  = fan_cnt + (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:190" *) 1'h1;
-  assign \$6  = in_r_data == (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:199" *) 32'd3405643776;
-  assign \$8  = in_r_data == (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:199" *) 32'd3405643776;
+  assign \$10  = in_r_data == (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *) 32'd3405643776;
+  assign \$12  = fan_cnt < (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *) fan_in;
+  assign \$14  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:315" *) pipe_b_r_rdy;
+  assign \$16  = next_pc + (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:211" *) 1'h1;
+  assign \$18  = addr_i0_cache + (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:218" *) 1'h1;
+  assign \$20  = addr_io + (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:276" *) 1'h1;
+  assign \$22  = ~ (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:315" *) pipe_b_r_rdy;
+  assign \$24  = fan_cnt < (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *) fan_in;
+  assign \$26  = fan_cnt < (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *) fan_in;
+  assign \$28  = fan_cnt < (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *) fan_in;
+  assign \$4  = fan_cnt + (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:191" *) 1'h1;
+  assign \$6  = in_r_data == (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *) 32'd3405643776;
+  assign \$8  = in_r_data == (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *) 32'd3405643776;
   always @(posedge clk)
-    pipe_a_r_en <= \pipe_a_r_en$next ;
+    pipe_b_w_en <= \pipe_b_w_en$next ;
+  always @(posedge clk)
+    next_pc_ovf <= \next_pc_ovf$next ;
   always @(posedge clk)
     fsm_state <= \fsm_state$next ;
   always @(posedge clk)
+    addr_i0_cache <= \addr_i0_cache$next ;
+  always @(posedge clk)
     cnt_fetch <= \cnt_fetch$next ;
+  always @(posedge clk)
+    pipe_a_w_en <= \pipe_a_w_en$next ;
   always @(posedge clk)
     fan_cnt <= \fan_cnt$next ;
   always @(posedge clk)
@@ -2756,13 +2761,11 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
   always @(posedge clk)
     pipe_b_r_en <= \pipe_b_r_en$next ;
   always @(posedge clk)
-    next_pc <= \next_pc$next ;
-  always @(posedge clk)
-    next_pc_ovf <= \next_pc_ovf$next ;
-  always @(posedge clk)
     addr_io <= \addr_io$next ;
   always @(posedge clk)
     addr_io_ovf <= \addr_io_ovf$next ;
+  always @(posedge clk)
+    next_pc <= \next_pc$next ;
   pe pe (
     .clk(clk),
     .in_a(pe_in_a),
@@ -2773,9 +2776,9 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
   pipe_a pipe_a (
     .clk(clk),
     .r_data(pipe_a_r_data),
-    .r_en(pipe_a_r_en),
     .rst(rst),
-    .w_data(pipe_a_w_data)
+    .w_data(pipe_a_w_data),
+    .w_en(pipe_a_w_en)
   );
   pipe_b pipe_b (
     .clk(clk),
@@ -2783,32 +2786,33 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
     .r_en(pipe_b_r_en),
     .r_rdy(pipe_b_r_rdy),
     .rst(rst),
-    .w_data(pipe_b_w_data)
+    .w_data(pipe_b_w_data),
+    .w_en(pipe_b_w_en)
   );
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
     \cnt_fetch$next  = cnt_fetch;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
       3'h0:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:199" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *)
           casez (\$6 )
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:199" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" */
             1'h1:
                 \cnt_fetch$next  = 1'h0;
           endcase
       /* \amaranth.decoding  = "FETCH/1" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:204" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
       3'h1:
           (* full_case = 32'd1 *)
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" *)
           casez (cnt_fetch)
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" */
             1'h1:
                 \cnt_fetch$next  = 1'h0;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:213" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:215" */
             default:
                 \cnt_fetch$next  = 1'h1;
           endcase
@@ -2820,80 +2824,110 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
-    \fsm_state$next  = fsm_state;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    \addr_i0_cache$next  = addr_i0_cache;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
       3'h0:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:199" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *)
           casez (\$8 )
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:199" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" */
+            1'h1:
+                \addr_i0_cache$next  = 10'h000;
+          endcase
+      /* \amaranth.decoding  = "FETCH/1" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
+      3'h1:
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" *)
+          casez (cnt_fetch)
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" */
+            1'h1:
+                \addr_i0_cache$next  = addr_io;
+          endcase
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
+    casez (rst)
+      1'h1:
+          \addr_i0_cache$next  = 10'h000;
+    endcase
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    \fsm_state$next  = fsm_state;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
+    casez (fsm_state)
+      /* \amaranth.decoding  = "INIT/0" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
+      3'h0:
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" *)
+          casez (\$10 )
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:200" */
             1'h1:
                 \fsm_state$next  = 3'h1;
           endcase
       /* \amaranth.decoding  = "FETCH/1" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:204" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
       3'h1:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" *)
           casez (cnt_fetch)
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" */
             1'h1:
                 \fsm_state$next  = 3'h2;
           endcase
       /* \amaranth.decoding  = "DECODE/2" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:217" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:220" */
       3'h2:
           (* full_case = 32'd1 *)
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:218" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:221" *)
           casez (opcode)
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:219" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:222" */
             4'h0:
                 \fsm_state$next  = 3'h3;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:225" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:231" */
             4'h1:
                 \fsm_state$next  = 3'h4;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:243" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:249" */
             4'h2:
                 \fsm_state$next  = 3'h5;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:250" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:256" */
             4'h3:
                 \fsm_state$next  = 3'h6;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:256" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:262" */
             4'h4:
                 \fsm_state$next  = 3'h1;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:264" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" */
             default:
                 \fsm_state$next  = 3'h0;
           endcase
       /* \amaranth.decoding  = "LOAD/3" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:267" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:273" */
       3'h3:
           (* full_case = 32'd1 *)
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *)
           casez (\$12 )
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" */
             1'h1:
                 /* empty */;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:283" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:292" */
             default:
                 \fsm_state$next  = 3'h1;
           endcase
       /* \amaranth.decoding  = "EXEC/4" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:299" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:308" */
       3'h4:
           /* empty */;
       /* \amaranth.decoding  = "STORE/5" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:302" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:311" */
       3'h5:
           \fsm_state$next  = 3'h1;
       /* \amaranth.decoding  = "FLUSH/6" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:305" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:314" */
       3'h6:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:306" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:315" *)
           casez (\$14 )
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:306" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:315" */
             1'h1:
                 \fsm_state$next  = 3'h1;
           endcase
@@ -2905,52 +2939,23 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
-    \addr_io$next  = addr_io;
-    \addr_io_ovf$next  = addr_io_ovf;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
-    casez (fsm_state)
-      /* \amaranth.decoding  = "INIT/0" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" */
-      3'h0:
-          /* empty */;
-      /* \amaranth.decoding  = "FETCH/1" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:204" */
-      3'h1:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" *)
-          casez (cnt_fetch)
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
-            1'h1:
-                { \addr_io_ovf$next , \addr_io$next  } = \$16 ;
-          endcase
-    endcase
-    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
-    casez (rst)
-      1'h1:
-        begin
-          \addr_io$next  = 10'h000;
-          \addr_io_ovf$next  = 1'h0;
-        end
-    endcase
-  end
-  always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
     \next_pc$next  = next_pc;
     \next_pc_ovf$next  = next_pc_ovf;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
       3'h0:
           /* empty */;
       /* \amaranth.decoding  = "FETCH/1" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:204" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
       3'h1:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" *)
           casez (cnt_fetch)
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" */
             1'h1:
-                { \next_pc_ovf$next , \next_pc$next  } = \$20 ;
+                { \next_pc_ovf$next , \next_pc$next  } = \$16 ;
           endcase
     endcase
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
@@ -2963,81 +2968,100 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
-    \pipe_b_r_en$next  = pipe_b_r_en;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    \addr_io$next  = addr_io;
+    \addr_io_ovf$next  = addr_io_ovf;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
       3'h0:
           /* empty */;
       /* \amaranth.decoding  = "FETCH/1" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:204" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
+      3'h1:
+          (* full_case = 32'd1 *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" *)
+          casez (cnt_fetch)
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:208" */
+            1'h1:
+                /* empty */;
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:215" */
+            default:
+                { \addr_io_ovf$next , \addr_io$next  } = \$18 ;
+          endcase
+      /* \amaranth.decoding  = "DECODE/2" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:220" */
+      3'h2:
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:221" *)
+          casez (opcode)
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:222" */
+            4'h0:
+                \addr_io$next  = v2_f;
+          endcase
+      /* \amaranth.decoding  = "LOAD/3" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:273" */
+      3'h3:
+          { \addr_io_ovf$next , \addr_io$next  } = \$20 ;
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
+    casez (rst)
+      1'h1:
+        begin
+          \addr_io$next  = 10'h000;
+          \addr_io_ovf$next  = 1'h0;
+        end
+    endcase
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    \pipe_b_r_en$next  = pipe_b_r_en;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
+    casez (fsm_state)
+      /* \amaranth.decoding  = "INIT/0" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
+      3'h0:
+          /* empty */;
+      /* \amaranth.decoding  = "FETCH/1" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
       3'h1:
           /* empty */;
       /* \amaranth.decoding  = "DECODE/2" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:217" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:220" */
       3'h2:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:218" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:221" *)
           casez (opcode)
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:219" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:222" */
             4'h0:
                 /* empty */;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:225" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:231" */
             4'h1:
                 /* empty */;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:243" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:249" */
             4'h2:
                 /* empty */;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:250" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:256" */
             4'h3:
                 \pipe_b_r_en$next  = 1'h1;
           endcase
       /* \amaranth.decoding  = "LOAD/3" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:267" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:273" */
       3'h3:
-          (* full_case = 32'd1 *)
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-          casez (\$24 )
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" */
-            1'h1:
-                (* full_case = 32'd1 *)
-                (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:274" *)
-                casez (v1)
-                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:275" */
-                  4'h0:
-                      /* empty */;
-                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" */
-                  default:
-                      \pipe_b_r_en$next  = 1'h1;
-                endcase
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:283" */
-            default:
-                (* full_case = 32'd1 *)
-                (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:284" *)
-                casez (v1)
-                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:285" */
-                  4'h0:
-                      /* empty */;
-                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:289" */
-                  default:
-                      \pipe_b_r_en$next  = 1'h0;
-                endcase
-          endcase
+          /* empty */;
       /* \amaranth.decoding  = "EXEC/4" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:299" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:308" */
       3'h4:
           /* empty */;
       /* \amaranth.decoding  = "STORE/5" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:302" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:311" */
       3'h5:
           /* empty */;
       /* \amaranth.decoding  = "FLUSH/6" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:305" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:314" */
       3'h6:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:306" *)
-          casez (\$26 )
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:306" */
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:315" *)
+          casez (\$22 )
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:315" */
             1'h1:
                 \pipe_b_r_en$next  = 1'h0;
           endcase
@@ -3049,36 +3073,36 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
     \fan_in$next  = fan_in;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
       3'h0:
           /* empty */;
       /* \amaranth.decoding  = "FETCH/1" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:204" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
       3'h1:
           /* empty */;
       /* \amaranth.decoding  = "DECODE/2" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:217" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:220" */
       3'h2:
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:218" *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:221" *)
           casez (opcode)
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:219" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:222" */
             4'h0:
                 /* empty */;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:225" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:231" */
             4'h1:
                 /* empty */;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:243" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:249" */
             4'h2:
                 /* empty */;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:250" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:256" */
             4'h3:
                 /* empty */;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:256" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:262" */
             4'h4:
                 \fan_in$next  = v2_f;
           endcase
@@ -3090,33 +3114,33 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
     \fan_cnt$next  = fan_cnt;
     \fan_cnt_ovf$next  = fan_cnt_ovf;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
       3'h0:
           /* empty */;
       /* \amaranth.decoding  = "FETCH/1" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:204" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
       3'h1:
           /* empty */;
       /* \amaranth.decoding  = "DECODE/2" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:217" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:220" */
       3'h2:
           /* empty */;
       /* \amaranth.decoding  = "LOAD/3" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:267" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:273" */
       3'h3:
           (* full_case = 32'd1 *)
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-          casez (\$30 )
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" */
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *)
+          casez (\$24 )
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" */
             1'h1:
                 { \fan_cnt_ovf$next , \fan_cnt$next  } = fan_cnt_next;
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:283" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:292" */
             default:
                 \fan_cnt$next  = 10'h000;
           endcase
@@ -3131,50 +3155,105 @@ module top(out_r_addr, out_w_addr, out_w_en, out_w_data, clk, rst, in_r_data);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$57 ) begin end
-    \pipe_a_r_en$next  = pipe_a_r_en;
-    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:196" *)
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    \pipe_a_w_en$next  = pipe_a_w_en;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
     casez (fsm_state)
       /* \amaranth.decoding  = "INIT/0" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
       3'h0:
           /* empty */;
       /* \amaranth.decoding  = "FETCH/1" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:204" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
       3'h1:
           /* empty */;
       /* \amaranth.decoding  = "DECODE/2" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:217" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:220" */
       3'h2:
           /* empty */;
       /* \amaranth.decoding  = "LOAD/3" */
-      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:267" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:273" */
       3'h3:
           (* full_case = 32'd1 *)
-          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" *)
-          casez (\$34 )
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:270" */
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *)
+          casez (\$26 )
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" */
             1'h1:
-                (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:274" *)
+                (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:283" *)
                 casez (v1)
-                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:275" */
+                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:284" */
                   4'h0:
-                      \pipe_a_r_en$next  = 1'h1;
+                      \pipe_a_w_en$next  = 1'h1;
                 endcase
-            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:283" */
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:292" */
             default:
-                (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:284" *)
+                (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:293" *)
                 casez (v1)
-                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:285" */
+                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:294" */
                   4'h0:
-                      \pipe_a_r_en$next  = 1'h0;
+                      \pipe_a_w_en$next  = 1'h0;
                 endcase
           endcase
     endcase
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
     casez (rst)
       1'h1:
-          \pipe_a_r_en$next  = 1'h0;
+          \pipe_a_w_en$next  = 1'h0;
+    endcase
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    \pipe_b_w_en$next  = pipe_b_w_en;
+    (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:197" *)
+    casez (fsm_state)
+      /* \amaranth.decoding  = "INIT/0" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:198" */
+      3'h0:
+          /* empty */;
+      /* \amaranth.decoding  = "FETCH/1" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:206" */
+      3'h1:
+          /* empty */;
+      /* \amaranth.decoding  = "DECODE/2" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:220" */
+      3'h2:
+          /* empty */;
+      /* \amaranth.decoding  = "LOAD/3" */
+      /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:273" */
+      3'h3:
+          (* full_case = 32'd1 *)
+          (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" *)
+          casez (\$28 )
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:279" */
+            1'h1:
+                (* full_case = 32'd1 *)
+                (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:283" *)
+                casez (v1)
+                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:284" */
+                  4'h0:
+                      /* empty */;
+                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:288" */
+                  default:
+                      \pipe_b_w_en$next  = 1'h1;
+                endcase
+            /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:292" */
+            default:
+                (* full_case = 32'd1 *)
+                (* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:293" *)
+                casez (v1)
+                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:294" */
+                  4'h0:
+                      /* empty */;
+                  /* src = "/data/Github/SNUHSD2023Spring/Lab5/pe_controller.py:298" */
+                  default:
+                      \pipe_b_w_en$next  = 1'h0;
+                endcase
+          endcase
+    endcase
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
+    casez (rst)
+      1'h1:
+          \pipe_b_w_en$next  = 1'h0;
     endcase
   end
   assign reuse_b = 1'h0;
@@ -3318,7 +3397,7 @@ endmodule
 (* \amaranth.hierarchy  = "top.pipe_a.unbuffered" *)
 (* generator = "Amaranth" *)
 module unbuffered(clk, w_data, w_en, w_rdy, r_data, r_en, r_rdy, level, rst);
-  reg \$auto$verilog_backend.cc:2083:dump_module$58  = 0;
+  reg \$auto$verilog_backend.cc:2083:dump_module$60  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:91" *)
   wire [10:0] \$10 ;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:91" *)
@@ -4476,7 +4555,7 @@ module unbuffered(clk, w_data, w_en, w_rdy, r_data, r_en, r_rdy, level, rst);
   always @(posedge clk)
     produce <= \produce$next ;
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$58 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$60 ) begin end
     \consume$next  = consume;
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:164" *)
     casez (\$13 )
@@ -4491,7 +4570,7 @@ module unbuffered(clk, w_data, w_en, w_rdy, r_data, r_en, r_rdy, level, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$58 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$60 ) begin end
     \level$next  = level;
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:167" *)
     casez (\$24 )
@@ -4512,7 +4591,7 @@ module unbuffered(clk, w_data, w_en, w_rdy, r_data, r_en, r_rdy, level, rst);
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$58 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$60 ) begin end
     \produce$next  = produce;
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:155" *)
     casez (\$8 )
@@ -4545,7 +4624,7 @@ endmodule
 (* \amaranth.hierarchy  = "top.pipe_b.unbuffered" *)
 (* generator = "Amaranth" *)
 module \unbuffered$4 (clk, w_data, w_en, w_rdy, r_data, r_en, r_rdy, level, rst);
-  reg \$auto$verilog_backend.cc:2083:dump_module$59  = 0;
+  reg \$auto$verilog_backend.cc:2083:dump_module$61  = 0;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:91" *)
   wire [10:0] \$10 ;
   (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:91" *)
@@ -5703,7 +5782,7 @@ module \unbuffered$4 (clk, w_data, w_en, w_rdy, r_data, r_en, r_rdy, level, rst)
   always @(posedge clk)
     produce <= \produce$next ;
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$61 ) begin end
     \consume$next  = consume;
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:164" *)
     casez (\$13 )
@@ -5718,7 +5797,7 @@ module \unbuffered$4 (clk, w_data, w_en, w_rdy, r_data, r_en, r_rdy, level, rst)
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$61 ) begin end
     \level$next  = level;
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:167" *)
     casez (\$24 )
@@ -5739,7 +5818,7 @@ module \unbuffered$4 (clk, w_data, w_en, w_rdy, r_data, r_en, r_rdy, level, rst)
     endcase
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$59 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$61 ) begin end
     \produce$next  = produce;
     (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/lib/fifo.py:155" *)
     casez (\$8 )

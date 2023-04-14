@@ -5,38 +5,50 @@
 (* generator = "Amaranth" *)
 module top(in_a, in_b, out_d, out_ovf, clk, rst, in_en);
   reg \$auto$verilog_backend.cc:2083:dump_module$2  = 0;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:40" *)
   wire [4:0] \$1 ;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input clk;
   wire clk;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:10" *)
   input [3:0] in_a;
   wire [3:0] in_a;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:11" *)
   input [3:0] in_b;
   wire [3:0] in_b;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:13" *)
   input in_en;
   wire in_en;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:14" *)
   output [3:0] out_d;
   wire [3:0] out_d;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:15" *)
   output out_ovf;
   wire out_ovf;
+  (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/ir.py:527" *)
   input rst;
   wire rst;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:19" *)
   reg [14:0] sim_delay = 15'h0000;
+  (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:19" *)
   reg [14:0] \sim_delay$next ;
-  assign \$1  = in_a + in_b;
+  assign \$1  = in_a + (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:40" *) in_b;
   always @(posedge clk)
     sim_delay <= \sim_delay$next ;
   always @* begin
-    if begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$2 ) begin end
     \sim_delay$next  = sim_delay;
-    case (in_en)
+    (* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:30" *)
+    casez (in_en)
+      /* src = "/data/Github/SNUHSD2023Spring/Lab3/Example/adder_sync.py:30" */
       1'h1:
         begin
           \sim_delay$next [14:5] = sim_delay[9:0];
           \sim_delay$next [4:0] = \$1 ;
         end
     endcase
-
-    case (rst)
+    (* src = "/usr/local/lib/python3.10/dist-packages/amaranth/hdl/xfrm.py:519" *)
+    casez (rst)
       1'h1:
           \sim_delay$next  = 15'h0000;
     endcase

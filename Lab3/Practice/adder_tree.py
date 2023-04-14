@@ -55,8 +55,8 @@ class AdderTree(Elaboratable):
             if signed:
                 m.d.comb += [
                     self.out_ovf.eq((~(tree_l.out_d[acc_bits - 1] ^ tree_r.out_d[acc_bits - 1]) & (
-                                tree_l.out_d[acc_bits - 1] ^ self.out_d[
-                            acc_bits - 1])) | tree_l.out_ovf | tree_r.out_ovf)
+                                tree_l.out_d[acc_bits - 1] ^ self.out_d[acc_bits - 1])) |
+                                tree_l.out_ovf | tree_r.out_ovf)
                 ]
             else:
                 m.d.comb += [
@@ -70,8 +70,8 @@ class AdderTree(Elaboratable):
             if signed:
                 m.d.comb += [
                     self.out_ovf.eq((~(self.in_data[0][acc_bits - 1] ^ self.in_data[1][acc_bits - 1]) & (
-                                self.in_data[0][acc_bits - 1] ^ self.out_d[acc_bits - 1])) | self.in_ovf[0] |
-                                    self.in_ovf[1])
+                                self.in_data[0][acc_bits - 1] ^ self.out_d[acc_bits - 1])) | 
+                                self.in_ovf[0] | self.in_ovf[1])
                 ]
             else:
                 m.d.comb += [
