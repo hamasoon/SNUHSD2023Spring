@@ -25,9 +25,6 @@ class AdderTree(Elaboratable):
         self.out_ovf = Signal(1)
         self.out_valid = Signal(1)
 
-        self.current_d = Signal(Shape(acc_bits, signed=self.signed))
-        self.current_ovf = Signal(1)
-
         # TODO
         if fan_in >= 4:
             self.tree_l = AdderTree(acc_bits, fan_in // 2, signed)
@@ -49,33 +46,25 @@ class AdderTree(Elaboratable):
                     tree_r.in_ovf[i].eq(self.in_ovf[i + self.fan_in // 2])
                 ]
             m.d.comb += [
-                Cat(self.out_d, self.current_ovf).eq(self.tree_l.out_d + self.tree_r.out_d),
-                self.out_valid.eq(self.tree_l.out_valid & self.tree_r.out_valid)
+                Cat(self.out_d, self.out_ovf).eq(self.tree_l.out_d + self.tree_r.out_d),
+                self.out_valid.eq(self.tree_l.out_valid & self.tree_r.out_valid),
+                self.out_ovf.eq(self.tree_l.out_ovf | self.tree_r.out_ovf | self.out_ovf)
             ]
             if signed:
                 m.d.comb += [
-                    self.out_ovf.eq((~(self.tree_l.out_d[self.acc_bits - 1] ^ self.tree_r.out_d[self.acc_bits - 1]) &
-                        (self.tree_l.out_d[self.acc_bits - 1] ^ self.out_d[self.acc_bits - 1])) |
-                             self.tree_l.out_ovf | self.tree_r.out_ovf)
-                ]
-            else:
-                m.d.comb += [
-                    self.out_ovf.eq(self.tree_l.out_ovf | self.tree_r.out_ovf | self.current_ovf)
+                    self.out_ovf.eq(~(self.tree_l.out_d[self.acc_bits - 1] ^ self.tree_r.out_d[self.acc_bits - 1]) &
+                        (self.tree_l.out_d[self.acc_bits - 1] ^ self.out_d[self.acc_bits - 1]))
                 ]
         else:
             m.d.comb += [
                 self.out_valid.eq(self.in_valid[0] & self.in_valid[1]),
-                Cat(self.out_d, self.current_ovf).eq(self.in_data[0] + self.in_data[1])
+                Cat(self.out_d, self.out_ovf).eq(self.in_data[0] + self.in_data[1]),
+                self.out_ovf.eq(self.in_ovf[0] | self.in_ovf[1] | self.out_ovf)
             ]
             if signed:
                 m.d.comb += [
-                    self.out_ovf.eq((~(self.in_data[0][self.acc_bits - 1] ^ self.in_data[1][self.acc_bits - 1]) & (
-                                self.in_data[0][self.acc_bits - 1] ^ self.out_d[self.acc_bits - 1])) | self.in_ovf[0] |
-                                    self.in_ovf[1])
-                ]
-            else:
-                m.d.comb += [
-                    self.out_ovf.eq(self.in_ovf[0] | self.in_ovf[1] | self.current_ovf)
+                    self.out_ovf.eq(~(self.in_data[0][self.acc_bits - 1] ^ self.in_data[1][self.acc_bits - 1]) & (
+                                self.in_data[0][self.acc_bits - 1] ^ self.out_d[self.acc_bits - 1]))
                 ]
 
         return m
@@ -107,9 +96,6 @@ if __name__ == '__main__':
         if hw_ovf:
             assert ((hw_sum - sum(in_data)) % (2 ** acc_bits) == 0)
         else:
-            print(hw_sum)
-            print(in_data)
-            print(sum(in_data))
             assert (hw_sum == sum(in_data))
 
 

@@ -105,13 +105,15 @@ Input and Output Size of BERT Layer
 3. Multiplication #
 - Multi-Head attention
   - Weight Multiplcation
-    - $4 \times [L \times H] \times [[H \times d] \times h] = [4 \times L \times H \times d \times h] = 4LHhd = 4 LH^2$
+    - $3 \times [L \times H] \times [[H \times d] \times h] = [3 \times L \times H \times d \times h] = 3LHhd = 3 LH^2$
+  - Q*K*V MUltiplication
+    - $2 \times [L \times d] \times [d \times L] = 2L^2d$
   - Output Selection
     - $[L \times H] \times [H \times H] = LH^2$
 - Feed Forward
   - $[L \times H] \times [H \times 4H] = 4LH^2$
   - $[L \times 4H] \times [4H \times H] = 4LH^2$
-- ***Total = $4LH^2 + LH^2 + 8LH^2 = 13 Lh^2 \approx 52L^3 $***
+- ***Total = $3LH^2 + L^2d + LH^2 + 8LH^2 \approx 52L^3 $ for H = 2L***
 
 Data Parallelism
 ================
@@ -161,3 +163,47 @@ ZeRO-infinity
 -------------
 - Using NVME, CPU Flash memory to store parameter
 - loading parameter when they needed
+
+Google TPU
+==========
+
+Problems
+--------
+
+V1 &rarr; V2
+------------
+- Interconnector for TPU network : single thread to multi thread!
+- Activation storage + accumulator + DDR3 &rarr; Vector memory + HBM
+    - HBM high bandwith of weight memory
+    - combine activation storage and accumulator to vector memory
+- support f16 numeric operation
+- 256 x 256 to 128 x 128 : utilization increased!   
+
+V2 &rarr; V3
+------------
+- improve of single elements
+
+V3 &rarr; V4
+------------
+- 128 x 128 to 4 x 32 x 32
+    - for large systolic array, delay occur due to propagation input
+    - so rather than that, using 4 x 4 product and adder tree
+
+Tesla
+=====
+1. Replicate parameters
+2. run layer 1 + replicate parameter for next layer
+3. discard replicated parameters
+4. replicate input activation for next layer - split across the channel
+5. compute partial sum
+
+Cerebras2
+=========
+
+Sparese
+-------
+
+SwarmX 
+------
+1. Weight broadcast: SwarmX는 MemoryX → CS-2로 weight를 전송시 동일한 weight를 복제하여 각 CS-2에 전송하는 역할을 수행한다. MemoryX가 직접 네트워크 트래픽 발생시키지 않고 SwarmX로 offload하여 분산처리하기 때문에 네트워크 성능이 저하되는 것을 방지한다.
+2. Gradient reduce: CS-2 → MemoryX로 전송되는 gradient를 SwarmX가 중간에서 reduce를 실행하여 MemoryX가 직접 reduce할 때 발생할 수 있는 학습속도 저하를 방지할 수 있다.
