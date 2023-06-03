@@ -1,6 +1,5 @@
 # Optimization : Pruning
 
-<!-- vscode-markdown-toc -->
 * 1. [Simple Pruning](#SimplePruning)
 		* 1.1. [How to store sparse matrix?](#Howtostoresparsematrix)
 		* 1.2. [Weight Clustering](#WeightClustering)
@@ -8,12 +7,6 @@
 		* 2.1. [Groupwise brain damage](#Groupwisebraindamage)
 		* 2.2. [Nvidia 2:4 rule pruning](#Nvidia2:4rulepruning)
 * 3. [Rottery Ticket prunning](#RotteryTicketprunning)
-
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
 
 ##  1. <a name='SimplePruning'></a>Simple Pruning
 - Zero-skipping : make small value weight as 0
@@ -31,7 +24,11 @@
     | Values         | A   | B   | C   | D   | E   | F   | G   | H   |
     - M[0][2] == A, M[2][2] == E
 
-####  1.2. <a name='WeightClustering'></a>Weight Clustering
+####  1.2. <a name='Column-wise Pruning'></a>Column-wise Pruning
+- Pruning column-wise : delete column which has only zero value
+  - $Sum(|W|[i]) < Threshold$ &rarr; Skipping column i
+
+####  1.3. <a name='WeightClustering'></a>Weight Clustering
 - Clustering weights descretly, and training does clustered weight
   - Group by each clustered block's gradient and reduce them to single value
 
