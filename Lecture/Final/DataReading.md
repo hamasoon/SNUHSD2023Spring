@@ -1,9 +1,33 @@
-# Reading Data from Memory
+<!-- vscode-markdown-toc -->
+* 1. [IOMMU](#IOMMU)
+		* 1.1. [Overview](#Overview)
+		* 1.2. [Utilization](#Utilization)
+		* 1.3. [Hierarchical page table](#Hierarchicalpagetable)
+* 2. [Interconnector](#Interconnector)
+		* 2.1. [Split Transaction](#SplitTransaction)
+		* 2.2. [Narrow and Wide Transfer](#NarrowandWideTransfer)
+		* 2.3. [Burst](#Burst)
+		* 2.4. [Handshacking](#Handshacking)
+		* 2.5. [Deadlock in Valid/Ready Signal](#DeadlockinValidReadySignal)
+		* 2.6. [Outstanding Request (Very Important)](#OutstandingRequestVeryImportant)
+		* 2.7. [Aribitation](#Aribitation)
+* 3. [DRAM](#DRAM)
+		* 3.1. [DRAM architecture](#DRAMarchitecture)
+		* 3.2. [Scheduling](#Scheduling)
+		* 3.3. [Refresh](#Refresh)
+		* 3.4. [Row Hammer](#RowHammer)
+		* 3.5. [Error Correction Code](#ErrorCorrectionCode)
 
-## IOMMU
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc --># Reading Data from Memory
+
+##  1. <a name='IOMMU'></a>IOMMU
 - Memory address translator
 
-#### Overview
+####  1.1. <a name='Overview'></a>Overview
 - Each hardware request data with it's logical address
     - Then MMU translate this address to physical address(in main memory?)
     - first, check TLB inside MMU    
@@ -11,7 +35,7 @@
         - miss : access to page table inside main memory and get address
     - Using address, get data
 
-#### Utilization
+####  1.2. <a name='Utilization'></a>Utilization
 - Solution of memory fragment problem
     - fragment cause large contiguous memory resource hard to find
     - by using mapping table, we can get data from main memory without full scanning
@@ -22,7 +46,7 @@
     - in this case, when we doesn't use kind of data type, then waste that region of physical memory
     - IOMMU provide demand paging
 
-#### Hierarchical page table
+####  1.3. <a name='Hierarchicalpagetable'></a>Hierarchical page table
 - As with most of computer memory, page table also contruct hierarchically
 
 - e.g. virtual address
@@ -35,29 +59,29 @@
     
 - So, without cache, translate time = memory access time $\times$ Level of page table
 
-## Interconnector
+##  2. <a name='Interconnector'></a>Interconnector
 - Connecting memory and device and provide interface between those device
 
-#### Split Transaction 
+####  2.1. <a name='SplitTransaction'></a>Split Transaction 
 - Split address, data, signal, response channel and handle those transaction seperately
 
-#### Narrow and Wide Transfer
+####  2.2. <a name='NarrowandWideTransfer'></a>Narrow and Wide Transfer
 - We can transfer data widely also, narrowly
     - by using narrow transfer, we can provide small data type like float16
 
-#### Burst
+####  2.3. <a name='Burst'></a>Burst
 - Request 0, 4, 8, 12, 16, 20, 24, 28, 32, 36 is actually same as 10 4byte data from 0
 
-#### Handshacking
+####  2.4. <a name='Handshacking'></a>Handshacking
 - Both valid and readt signal is on, then start transfer
 
-#### Deadlock in Valid/Ready Signal
+####  2.5. <a name='DeadlockinValidReadySignal'></a>Deadlock in Valid/Ready Signal
 - valid signal should not depends on ready!!!!!
 - those two signal must be independent from each other
 
 - Only read data from two signal become valid simultaneously
 
-#### Outstanding Request (Very Important)
+####  2.6. <a name='OutstandingRequestVeryImportant'></a>Outstanding Request (Very Important)
 - The capability of multiple outstanding requests is to allow multiple requests to be issued previous requests completed.
 
 - To reduce penalty of cache miss, We generally using Non-blocking cache
@@ -67,7 +91,7 @@
     - Accept new request and send data concurrently
     - access multiple DRAM banks in parallel thereby realizing maximum DRAM bandwidth
 
-#### Aribitation
+####  2.7. <a name='Aribitation'></a>Aribitation
 - Fixed Priority : High priority first always
 
 - Round-Robin : fairly
@@ -75,9 +99,9 @@
 - Fair Arbitration : Grouped Priority Round-Robin
     - Grouping master with priority and run round-robin for each group
 
-## DRAM
+##  3. <a name='DRAM'></a>DRAM
 
-#### DRAM architecture
+####  3.1. <a name='DRAMarchitecture'></a>DRAM architecture
 - Multiple **banks**
     - **Rows** under banks : access to row using **Row address decoder**
         - get all data inside rows to **row buffer**
@@ -118,7 +142,7 @@
         - DDR2 : faster DDR - increase clock speed
         - DDR3 : more faster DDR - increase clock speed more
 
-#### Scheduling
+####  3.2. <a name='Scheduling'></a>Scheduling
 - Assumption : ACT/RD/PRE - 3 cycle, D - 2 cycle
 0. Normal case
     - single read total cycle : $3 + 3 + 3$
@@ -141,7 +165,7 @@
     - For larger data, actually Row buffer hits could be more efficient parallelism
     - So, place highly correlatd hot variable on the same DRAM row is very important
 
-#### Refresh
+####  3.3. <a name='Refresh'></a>Refresh
 - Overhead
     - Power
     - Latency
@@ -154,7 +178,7 @@
     - PASR
     - fine-grained self refresh
 
-#### Row Hammer
+####  3.4. <a name='RowHammer'></a>Row Hammer
 - Yes it is problem but...
     - it think it's not important...
 
@@ -163,5 +187,5 @@
 
     - PARA
 
-#### Error Correction Code
+####  3.5. <a name='ErrorCorrectionCode'></a>Error Correction Code
 - Calculation... : I will see this in later

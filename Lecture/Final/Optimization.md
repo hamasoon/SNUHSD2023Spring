@@ -1,12 +1,12 @@
 # Optimization : Pruning
 
 * 1. [Simple Pruning](#SimplePruning)
-		* 1.1. [How to store sparse matrix?](#Howtostoresparsematrix)
-		* 1.2. [Weight Clustering](#WeightClustering)
+	* 1.1. [How to store sparse matrix?](#Howtostoresparsematrix)
+	* 1.2. [Weight Clustering](#WeightClustering)
 * 2. [Structured Pruning](#StructuredPruning)
-		* 2.1. [Groupwise brain damage](#Groupwisebraindamage)
-		* 2.2. [Nvidia 2:4 rule pruning](#Nvidia2:4rulepruning)
-* 3. [Rottery Ticket prunning](#RotteryTicketprunning)
+	* 2.1. [Groupwise brain damage](#Groupwisebraindamage)
+	* 2.2. [Nvidia 2:4 rule pruning](#Nvidia2:4rulepruning)
+	* 2.3. [Rottery Ticket prunning](#RotteryTicketprunning)
 
 ##  1. <a name='SimplePruning'></a>Simple Pruning
 - Zero-skipping : make small value weight as 0
@@ -45,7 +45,7 @@
   - meta data is 2b indices to indicate original data's location
   - if) 0, 2 data deleted and 1, 3 left &rarr; then meta data is 01(1), 11(3)
 
-##  3. <a name='RotteryTicketprunning'></a>Rottery Ticket prunning
+####  2.3. <a name='RotteryTicketprunning'></a>Rottery Ticket prunning
 1. Training like traditionally(init &rarr; train &rarr; prune)
 2. Restart but in this time, pruning first with the result of previous train
    - Pruning with the sub-network of previous trained result
